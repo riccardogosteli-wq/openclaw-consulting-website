@@ -12,22 +12,5 @@
     <priority>1.0</priority>
   </url>
 
-  <url>
-    <loc>https://openclaw-consulting.ch/impressum.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://openclaw-consulting.ch/impressum.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/impressum.html"/>
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
-
-  <url>
-    <loc>https://openclaw-consulting.ch/datenschutz.html</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://openclaw-consulting.ch/datenschutz.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/datenschutz.html"/>
-    <lastmod>2026-03-01</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.2</priority>
-  </url>
 
 </urlset>
