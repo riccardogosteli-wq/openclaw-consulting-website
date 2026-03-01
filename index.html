@@ -28,11 +28,27 @@
     a{text-decoration:none;color:inherit}
 
     /* LANG */
-    .l-en{display:none}
-    body.en .l-de{display:none}
-    body.en .l-en{display:revert}
-    body.en span.l-en,body.en div.l-en,body.en p.l-en,body.en h1.l-en,body.en h2.l-en,body.en h3.l-en,body.en li.l-en,body.en label.l-en{display:block}
-    body.en a.l-en{display:inline}
+    .l-en { display: none !important; }
+    body.en .l-de { display: none !important; }
+    body.en div.l-en    { display: block !important; }
+    body.en p.l-en      { display: block !important; }
+    body.en h1.l-en     { display: block !important; }
+    body.en h2.l-en     { display: block !important; }
+    body.en h3.l-en     { display: block !important; }
+    body.en li.l-en     { display: list-item !important; }
+    body.en label.l-en  { display: block !important; }
+    body.en span.l-en   { display: inline !important; }
+    body.en a.l-en      { display: inline !important; }
+    body.en strong.l-en { display: inline !important; }
+    /* Special flex/inline-flex elements */
+    body.en .hero-tag.l-en   { display: inline-flex !important; }
+    body.en .prob-pill.l-en  { display: inline-flex !important; }
+    body.en .uc-save.l-en    { display: inline !important; }
+    body.en .vis-badge.l-en  { display: inline !important; }
+    body.en .perk-txt.l-en   { display: block !important; }
+    body.en .cform-title.l-en{ display: block !important; }
+    body.en .vis-saving-label.l-en { display: block !important; }
+    body.en .fnote.l-en      { display: block !important; }
 
     /* NAV */
     nav{
