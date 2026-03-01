@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Datenschutz – OpenClaw Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --ink:    #0F1714;
+      --ink2:   #1E3329;
+      --green:  #12A878;
+      --green2: #0E8F67;
+      --green3: #E6F7F2;
+      --slate:  #4B5563;
+      --light:  #F7FAF9;
+      --white:  #FFFFFF;
+      --border: #E4EDE9;
+      --r: 14px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.2}
+    a{text-decoration:none;color:inherit}
+
+    /* LANG */
+    .l-en { display: none !important; }
+    body.en .l-de { display: none !important; }
+    body.en div.l-en    { display: block !important; }
+    body.en p.l-en      { display: block !important; }
+    body.en h1.l-en     { display: block !important; }
+    body.en h2.l-en     { display: block !important; }
+    body.en h3.l-en     { display: block !important; }
+    body.en li.l-en     { display: list-item !important; }
+    body.en span.l-en   { display: inline !important; }
+    body.en a.l-en      { display: inline !important; }
+
+    /* NAV */
+    nav{
+      position:sticky;top:0;z-index:100;
+      background:rgba(255,255,255,.92);backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--border);
+      display:flex;align-items:center;justify-content:space-between;
+      padding:0 6vw;height:64px;
+    }
+    .logo{display:flex;align-items:center;gap:9px;font-family:'Bricolage Grotesque',sans-serif;font-size:1.1rem;font-weight:700;color:var(--ink)}
+    .logo-mark{width:32px;height:32px;border-radius:8px;background:var(--ink);display:flex;align-items:center;justify-content:center;font-size:.9rem}
+    .nav-r{display:flex;align-items:center;gap:1rem}
+    .lang-btns{display:flex;gap:3px}
+    .lang-btns button{
+      background:none;border:1.5px solid var(--border);color:var(--slate);
+      padding:.22rem .55rem;border-radius:6px;font-size:.73rem;font-weight:600;cursor:pointer;transition:all .15s
+    }
+    .lang-btns button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+    .back-link{font-size:.82rem;color:var(--slate);font-weight:500;display:flex;align-items:center;gap:5px}
+    .back-link:hover{color:var(--green)}
+
+    /* CONTENT */
+    .page-wrap{max-width:760px;margin:0 auto;padding:60px 6vw 100px}
+    .page-title{font-size:2.2rem;font-weight:800;margin-bottom:.5rem}
+    .page-sub{color:var(--slate);font-size:.9rem;margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:1px solid var(--border)}
+    .section{margin-bottom:2rem}
+    .section h2{font-size:1.1rem;font-weight:700;margin-bottom:.6rem;color:var(--ink)}
+    .section p{font-size:.92rem;color:var(--slate);line-height:1.7;margin-bottom:.6rem}
+    .section ul{font-size:.92rem;color:var(--slate);line-height:1.7;padding-left:1.3rem;margin-bottom:.6rem}
+    .section a{color:var(--green);font-weight:500}
+    .section a:hover{color:var(--green2);text-decoration:underline}
+
+    /* FOOTER */
+    footer{
+      background:#080E0C;color:rgba(255,255,255,.4);
+      padding:1.8rem 6vw;display:flex;flex-wrap:wrap;
+      justify-content:space-between;align-items:center;gap:1rem;font-size:.8rem
+    }
+    .footer-logo{font-family:'Bricolage Grotesque',sans-serif;color:rgba(255,255,255,.7);font-size:.95rem;font-weight:700;display:flex;align-items:center;gap:7px}
+    .flinks{display:flex;gap:1.4rem}
+    footer a{color:rgba(255,255,255,.4);transition:color .2s}
+    footer a:hover{color:var(--green)}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">
+    <div class="logo-mark">🦞</div>
+    OpenClaw Consulting
+  </a>
+  <div class="nav-r">
+    <a href="/" class="back-link l-de">← Zurück</a>
+    <a href="/" class="back-link l-en">← Back</a>
+    <div class="lang-btns">
+      <button id="btn-de" class="on" onclick="setLang('de')">DE</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- DE -->
+  <h1 class="page-title l-de">Datenschutzerklärung</h1>
+  <p class="page-sub l-de">Stand: März 2026</p>
+
+  <!-- EN -->
+  <h1 class="page-title l-en">Privacy Policy</h1>
+  <p class="page-sub l-en">Last updated: March 2026</p>
+
+  <!-- 1 Verantwortlicher -->
+  <div class="section">
+    <h2 class="l-de">1. Verantwortlicher</h2>
+    <h2 class="l-en">1. Controller</h2>
+    <p class="l-de">Verantwortlich für die Datenbearbeitung auf dieser Website ist:<br/><strong>OpenClaw Consulting</strong>, Schweiz</p>
+    <p class="l-en">The controller responsible for data processing on this website is:<br/><strong>OpenClaw Consulting</strong>, Switzerland</p>
+  </div>
+
+  <!-- 2 Welche Daten -->
+  <div class="section">
+    <h2 class="l-de">2. Welche Daten wir erheben</h2>
+    <h2 class="l-en">2. Data We Collect</h2>
+    <p class="l-de">Beim Besuch dieser Website werden folgende Daten verarbeitet:</p>
+    <p class="l-en">When you visit this website, the following data may be processed:</p>
+    <ul class="l-de">
+      <li>Technische Verbindungsdaten (IP-Adresse, Browser, Betriebssystem, Referrer) durch den Hosting-Anbieter</li>
+      <li>Formulardaten (Name, E-Mail, Nachricht), wenn Sie das Kontaktformular nutzen</li>
+      <li>Anonymisierte Nutzungsdaten über Google Analytics 4 (sofern aktiv)</li>
+    </ul>
+    <ul class="l-en">
+      <li>Technical connection data (IP address, browser, OS, referrer) via the hosting provider</li>
+      <li>Form data (name, email, message) when you use the contact form</li>
+      <li>Anonymised usage data via Google Analytics 4 (if active)</li>
+    </ul>
+  </div>
+
+  <!-- 3 Kontaktformular -->
+  <div class="section">
+    <h2 class="l-de">3. Kontaktformular</h2>
+    <h2 class="l-en">3. Contact Form</h2>
+    <p class="l-de">Eingaben im Kontaktformular werden über den Dienst <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> (Formspree, Inc., USA) verarbeitet und per E-Mail weitergeleitet. Formspree speichert Formulareinträge für 30 Tage. Weitere Informationen finden Sie in der <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">Datenschutzerklärung von Formspree</a>.</p>
+    <p class="l-en">Form submissions are processed via <a href="https://formspree.io" target="_blank" rel="noopener">Formspree</a> (Formspree, Inc., USA) and forwarded by email. Formspree retains submissions for 30 days. See <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">Formspree's Privacy Policy</a> for details.</p>
+  </div>
+
+  <!-- 4 Hosting -->
+  <div class="section">
+    <h2 class="l-de">4. Hosting</h2>
+    <h2 class="l-en">4. Hosting</h2>
+    <p class="l-de">Diese Website wird über <strong>Cloudflare Pages</strong> gehostet. Cloudflare kann dabei technische Verbindungsdaten verarbeiten. Weitere Informationen finden Sie in der <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Datenschutzerklärung von Cloudflare</a>.</p>
+    <p class="l-en">This website is hosted via <strong>Cloudflare Pages</strong>. Cloudflare may process technical connection data. See <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's Privacy Policy</a> for details.</p>
+  </div>
+
+  <!-- 5 Analytics -->
+  <div class="section">
+    <h2 class="l-de">5. Google Analytics</h2>
+    <h2 class="l-en">5. Google Analytics</h2>
+    <p class="l-de">Diese Website verwendet Google Analytics 4 (Google LLC, USA). Dabei werden anonymisierte Nutzungsdaten erfasst, um das Angebot zu verbessern. Die IP-Adresse wird vor der Übermittlung anonymisiert. Sie können der Erfassung widersprechen, indem Sie entsprechende Browser-Add-ons installieren oder Cookies ablehnen. Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Datenschutzerklärung</a>.</p>
+    <p class="l-en">This website uses Google Analytics 4 (Google LLC, USA) to collect anonymised usage data for service improvement. IP addresses are anonymised before transmission. You can opt out by installing browser add-ons or rejecting cookies. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+  </div>
+
+  <!-- 6 Ihre Rechte -->
+  <div class="section">
+    <h2 class="l-de">6. Ihre Rechte</h2>
+    <h2 class="l-en">6. Your Rights</h2>
+    <p class="l-de">Gemäss Schweizer Datenschutzgesetz (DSG) haben Sie das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Bearbeitung Ihrer personenbezogenen Daten. Für Anfragen nutzen Sie bitte das <a href="impressum.html#kontakt">Kontaktformular</a>.</p>
+    <p class="l-en">Under Swiss data protection law (nDSG) you have the right to access, rectify, erase and restrict processing of your personal data. Please use the <a href="impressum.html">contact form</a> for any requests.</p>
+  </div>
+
+  <!-- 7 Cookies -->
+  <div class="section">
+    <h2 class="l-de">7. Cookies</h2>
+    <h2 class="l-en">7. Cookies</h2>
+    <p class="l-de">Diese Website verwendet nur technisch notwendige Cookies (z. B. für die Spracheinstellung). Analyse-Cookies werden nur mit Ihrer Einwilligung gesetzt.</p>
+    <p class="l-en">This website uses only technically necessary cookies (e.g. for language preference). Analytics cookies are only set with your consent.</p>
+  </div>
+
+  <!-- 8 Änderungen -->
+  <div class="section">
+    <h2 class="l-de">8. Änderungen dieser Erklärung</h2>
+    <h2 class="l-en">8. Changes to This Policy</h2>
+    <p class="l-de">Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen. Die jeweils aktuelle Version ist auf dieser Seite abrufbar.</p>
+    <p class="l-en">We reserve the right to update this privacy policy at any time. The current version is always available on this page.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo"><div class="logo-mark" style="width:26px;height:26px;font-size:.8rem;border-radius:6px">🦞</div> OpenClaw Consulting</div>
+  <span class="l-de">© 2026 OpenClaw Consulting · Schweiz</span>
+  <span class="l-en">© 2026 OpenClaw Consulting · Switzerland</span>
+  <div class="flinks">
+    <a href="impressum.html" class="l-de">Impressum</a><a href="impressum.html" class="l-en">Legal</a>
+    <a href="datenschutz.html" class="l-de">Datenschutz</a><a href="datenschutz.html" class="l-en">Privacy</a>
+  </div>
+</footer>
+
+<script>
+function setLang(l) {
+  document.body.classList.toggle('en', l === 'en');
+  document.getElementById('btn-de').classList.toggle('on', l === 'de');
+  document.getElementById('btn-en').classList.toggle('on', l === 'en');
+  localStorage.setItem('oc-lang', l);
+}
+(function(){ const s = localStorage.getItem('oc-lang'); if(s) setLang(s); })();
+</script>
+</body>
+</html>

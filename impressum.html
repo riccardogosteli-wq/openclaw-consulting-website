@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Impressum – OpenClaw Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --ink:    #0F1714;
+      --ink2:   #1E3329;
+      --green:  #12A878;
+      --green2: #0E8F67;
+      --green3: #E6F7F2;
+      --slate:  #4B5563;
+      --light:  #F7FAF9;
+      --white:  #FFFFFF;
+      --border: #E4EDE9;
+      --r: 14px;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.2}
+    a{text-decoration:none;color:inherit}
+
+    /* LANG */
+    .l-en { display: none !important; }
+    body.en .l-de { display: none !important; }
+    body.en div.l-en    { display: block !important; }
+    body.en p.l-en      { display: block !important; }
+    body.en h1.l-en     { display: block !important; }
+    body.en h2.l-en     { display: block !important; }
+    body.en h3.l-en     { display: block !important; }
+    body.en li.l-en     { display: list-item !important; }
+    body.en span.l-en   { display: inline !important; }
+    body.en a.l-en      { display: inline !important; }
+
+    /* NAV */
+    nav{
+      position:sticky;top:0;z-index:100;
+      background:rgba(255,255,255,.92);backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--border);
+      display:flex;align-items:center;justify-content:space-between;
+      padding:0 6vw;height:64px;
+    }
+    .logo{display:flex;align-items:center;gap:9px;font-family:'Bricolage Grotesque',sans-serif;font-size:1.1rem;font-weight:700;color:var(--ink)}
+    .logo-mark{width:32px;height:32px;border-radius:8px;background:var(--ink);display:flex;align-items:center;justify-content:center;font-size:.9rem}
+    .nav-r{display:flex;align-items:center;gap:1rem}
+    .lang-btns{display:flex;gap:3px}
+    .lang-btns button{
+      background:none;border:1.5px solid var(--border);color:var(--slate);
+      padding:.22rem .55rem;border-radius:6px;font-size:.73rem;font-weight:600;cursor:pointer;transition:all .15s
+    }
+    .lang-btns button.on{background:var(--ink);border-color:var(--ink);color:#fff}
+    .back-link{font-size:.82rem;color:var(--slate);font-weight:500;display:flex;align-items:center;gap:5px}
+    .back-link:hover{color:var(--green)}
+
+    /* CONTENT */
+    .page-wrap{max-width:760px;margin:0 auto;padding:60px 6vw 100px}
+    .page-title{font-size:2.2rem;font-weight:800;margin-bottom:.5rem}
+    .page-sub{color:var(--slate);font-size:.9rem;margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:1px solid var(--border)}
+    .section{margin-bottom:2rem}
+    .section h2{font-size:1.1rem;font-weight:700;margin-bottom:.6rem;color:var(--ink)}
+    .section p, .section address{font-size:.92rem;color:var(--slate);line-height:1.7;font-style:normal}
+    .section a{color:var(--green);font-weight:500}
+    .section a:hover{color:var(--green2);text-decoration:underline}
+
+    /* CONTACT FORM */
+    .cform-wrap{background:var(--light);border:1px solid var(--border);border-radius:var(--r);padding:2rem;margin-top:1rem}
+    .frow{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+    @media(max-width:600px){.frow{grid-template-columns:1fr}}
+    .fg{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem}
+    .fg label{font-size:.8rem;font-weight:600;color:var(--ink)}
+    .fg input,.fg textarea,.fg select{
+      border:1.5px solid var(--border);border-radius:9px;padding:.7rem 1rem;
+      font-size:.9rem;font-family:'Inter',sans-serif;color:var(--ink);
+      background:var(--white);transition:border-color .15s;outline:none;width:100%
+    }
+    .fg input:focus,.fg textarea:focus{border-color:var(--green)}
+    .fg textarea{resize:vertical;min-height:110px}
+    .btn-submit{
+      width:100%;padding:.85rem;background:var(--ink);color:#fff;
+      border:none;border-radius:10px;font-size:.95rem;font-weight:600;
+      font-family:'Inter',sans-serif;cursor:pointer;transition:background .15s
+    }
+    .btn-submit:hover{background:var(--ink2)}
+    .fnote{text-align:center;font-size:.75rem;color:var(--slate);margin-top:.65rem}
+
+    /* FOOTER */
+    footer{
+      background:#080E0C;color:rgba(255,255,255,.4);
+      padding:1.8rem 6vw;display:flex;flex-wrap:wrap;
+      justify-content:space-between;align-items:center;gap:1rem;font-size:.8rem
+    }
+    .footer-logo{font-family:'Bricolage Grotesque',sans-serif;color:rgba(255,255,255,.7);font-size:.95rem;font-weight:700;display:flex;align-items:center;gap:7px}
+    .flinks{display:flex;gap:1.4rem}
+    footer a{color:rgba(255,255,255,.4);transition:color .2s}
+    footer a:hover{color:var(--green)}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">
+    <div class="logo-mark">🦞</div>
+    OpenClaw Consulting
+  </a>
+  <div class="nav-r">
+    <a href="/" class="back-link l-de">← Zurück</a>
+    <a href="/" class="back-link l-en">← Back</a>
+    <div class="lang-btns">
+      <button id="btn-de" class="on" onclick="setLang('de')">DE</button>
+      <button id="btn-en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- DE -->
+  <h1 class="page-title l-de">Impressum</h1>
+  <p class="page-sub l-de">Pflichtangaben gemäss schweizerischem Recht</p>
+
+  <!-- EN -->
+  <h1 class="page-title l-en">Legal Notice</h1>
+  <p class="page-sub l-en">Required disclosures under Swiss law</p>
+
+  <!-- Anbieter -->
+  <div class="section">
+    <h2 class="l-de">Anbieter</h2>
+    <h2 class="l-en">Provider</h2>
+    <address>
+      <strong>OpenClaw Consulting</strong><br/>
+      Schweiz
+    </address>
+  </div>
+
+  <!-- Kontakt -->
+  <div class="section">
+    <h2 class="l-de">Kontakt</h2>
+    <h2 class="l-en">Contact</h2>
+    <p class="l-de">Nutzen Sie das untenstehende Kontaktformular für alle Anfragen.</p>
+    <p class="l-en">Please use the contact form below for all enquiries.</p>
+
+    <div class="cform-wrap">
+      <form action="https://formspree.io/f/xdalvpbl" method="POST">
+        <input type="hidden" name="_subject" value="Anfrage via Impressum – OpenClaw Consulting"/>
+        <div class="frow">
+          <div class="fg">
+            <label class="l-de">Vorname *</label>
+            <label class="l-en">First Name *</label>
+            <input type="text" name="first_name" required/>
+          </div>
+          <div class="fg">
+            <label class="l-de">Nachname *</label>
+            <label class="l-en">Last Name *</label>
+            <input type="text" name="last_name" required/>
+          </div>
+        </div>
+        <div class="fg">
+          <label class="l-de">E-Mail-Adresse *</label>
+          <label class="l-en">Email Address *</label>
+          <input type="email" name="email" required/>
+        </div>
+        <div class="fg">
+          <label class="l-de">Nachricht *</label>
+          <label class="l-en">Message *</label>
+          <textarea name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit l-de">Nachricht senden</button>
+        <button type="submit" class="btn-submit l-en">Send Message</button>
+        <p class="fnote l-de">Wir antworten in der Regel innerhalb von 1–2 Werktagen.</p>
+        <p class="fnote l-en">We typically respond within 1–2 business days.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Haftungsausschluss -->
+  <div class="section">
+    <h2 class="l-de">Haftungsausschluss</h2>
+    <h2 class="l-en">Disclaimer</h2>
+    <p class="l-de">Die Inhalte dieser Website wurden mit grösstmöglicher Sorgfalt erstellt. OpenClaw Consulting übernimmt keine Gewähr für die Aktualität, Richtigkeit und Vollständigkeit der bereitgestellten Informationen. Haftungsansprüche gegen OpenClaw Consulting wegen materieller oder immaterieller Schäden, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen entstanden sind, sind grundsätzlich ausgeschlossen.</p>
+    <p class="l-en">The content of this website has been compiled with the utmost care. OpenClaw Consulting does not guarantee the accuracy, completeness or timeliness of the information provided. Liability claims against OpenClaw Consulting for material or immaterial damage caused by use or non-use of the information provided are excluded in principle.</p>
+  </div>
+
+  <!-- Urheberrecht -->
+  <div class="section">
+    <h2 class="l-de">Urheberrecht</h2>
+    <h2 class="l-en">Copyright</h2>
+    <p class="l-de">Die auf dieser Website veröffentlichten Inhalte und Werke unterliegen dem schweizerischen Urheberrecht. Jede Vervielfältigung, Bearbeitung, Verbreitung oder sonstige Verwertung ausserhalb der Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung von OpenClaw Consulting.</p>
+    <p class="l-en">The content and works published on this website are subject to Swiss copyright law. Any reproduction, processing, distribution or any form of use beyond the limits of copyright law requires the written consent of OpenClaw Consulting.</p>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo"><div class="logo-mark" style="width:26px;height:26px;font-size:.8rem;border-radius:6px">🦞</div> OpenClaw Consulting</div>
+  <span class="l-de">© 2026 OpenClaw Consulting · Schweiz</span>
+  <span class="l-en">© 2026 OpenClaw Consulting · Switzerland</span>
+  <div class="flinks">
+    <a href="impressum.html" class="l-de">Impressum</a><a href="impressum.html" class="l-en">Legal</a>
+    <a href="datenschutz.html" class="l-de">Datenschutz</a><a href="datenschutz.html" class="l-en">Privacy</a>
+  </div>
+</footer>
+
+<script>
+function setLang(l) {
+  document.body.classList.toggle('en', l === 'en');
+  document.getElementById('btn-de').classList.toggle('on', l === 'de');
+  document.getElementById('btn-en').classList.toggle('on', l === 'en');
+  localStorage.setItem('oc-lang', l);
+}
+(function(){ const s = localStorage.getItem('oc-lang'); if(s) setLang(s); })();
+</script>
+</body>
+</html>
