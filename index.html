@@ -4,680 +4,661 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OpenClaw Consulting – KI-Automatisierung für Ihr Unternehmen</title>
-  <meta name="description" content="OpenClaw Consulting – massgeschneiderte KI-Automatisierung für Schweizer Unternehmen. Sichere, effiziente Lösungen für interne Prozesse, Angebotserstellung und Content." />
-
-  <!-- Google tag (gtag.js) – replace G-XXXXXXXXXX with your real GA4 ID -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script> -->
-
+  <meta name="description" content="OpenClaw Consulting – Wir automatisieren repetitive Aufgaben in Ihrem Unternehmen. Sicher, schnell, messbar. Für Schweizer KMU und Selbstständige." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@700;800&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --primary:   #0A2342;   /* deep navy */
-      --accent:    #E8A020;   /* gold */
-      --accent2:   #1A6B8A;   /* teal */
-      --light:     #F4F7FB;
-      --white:     #FFFFFF;
-      --text:      #1A2332;
-      --muted:     #5A6B7C;
-      --border:    #D8E4EE;
-      --radius:    10px;
+      --navy:    #0D1F3C;
+      --navy2:   #162B50;
+      --gold:    #F0A500;
+      --gold2:   #FFD166;
+      --teal:    #0B9E8A;
+      --light:   #F7F9FC;
+      --white:   #FFFFFF;
+      --text:    #111827;
+      --muted:   #6B7280;
+      --border:  #E5EAF2;
+      --r:       12px;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
+    h1,h2,h3,h4 { font-family: 'Sora', sans-serif; line-height: 1.15; }
+    a { text-decoration: none; color: inherit; }
 
-    body {
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: var(--white);
-      line-height: 1.6;
-    }
+    /* ─── LANGUAGE ─── */
+    [data-en] { display: none; }
+    body.en [data-de] { display: none; }
+    body.en [data-en] { display: revert; }
 
-    h1, h2, h3, h4 { font-family: 'Sora', sans-serif; }
-
-    a { color: inherit; text-decoration: none; }
-
-    /* ── NAV ─────────────────────────────── */
+    /* ─── NAV ─── */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: var(--primary);
+      background: var(--navy);
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 6vw;
-      height: 68px;
-      box-shadow: 0 2px 16px rgba(0,0,0,.18);
+      padding: 0 6vw; height: 66px;
+      box-shadow: 0 1px 0 rgba(255,255,255,.07);
     }
-
     .logo {
       display: flex; align-items: center; gap: 10px;
-      font-family: 'Sora', sans-serif;
-      font-size: 1.25rem; font-weight: 700;
-      color: var(--white);
+      font-family: 'Sora', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--white);
     }
-
-    .logo-mark {
-      width: 36px; height: 36px;
-      background: var(--accent);
-      border-radius: 8px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.1rem;
+    .logo-icon {
+      width: 34px; height: 34px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--gold), #FF8C00);
+      display: flex; align-items: center; justify-content: center; font-size: 1rem;
     }
-
-    .nav-links {
-      display: flex; gap: 2rem; list-style: none;
-    }
-
-    .nav-links a {
-      color: rgba(255,255,255,.8);
-      font-size: .9rem; font-weight: 500;
-      transition: color .2s;
-    }
-    .nav-links a:hover { color: var(--accent); }
-
+    .nav-right { display: flex; align-items: center; gap: 2rem; }
+    .nav-links { display: flex; gap: 1.8rem; list-style: none; }
+    .nav-links a { color: rgba(255,255,255,.7); font-size: .88rem; font-weight: 500; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
     .nav-cta {
-      background: var(--accent);
-      color: var(--primary) !important;
-      padding: .45rem 1.1rem;
-      border-radius: 6px;
-      font-weight: 600 !important;
+      background: var(--gold); color: var(--navy) !important;
+      padding: .4rem 1rem; border-radius: 7px; font-weight: 700 !important; font-size: .85rem !important;
     }
+    .lang-btns { display: flex; gap: 4px; }
+    .lang-btns button {
+      background: none; border: 1px solid rgba(255,255,255,.2);
+      color: rgba(255,255,255,.6); padding: .2rem .5rem; border-radius: 5px;
+      font-size: .75rem; font-weight: 600; cursor: pointer; transition: all .2s;
+    }
+    .lang-btns button.on { background: var(--gold); border-color: var(--gold); color: var(--navy); }
+    @media(max-width:768px){ .nav-links{display:none;} }
 
-    .lang-switch {
-      display: flex; gap: .4rem;
-    }
-    .lang-switch button {
-      background: none; border: 1px solid rgba(255,255,255,.3);
-      color: rgba(255,255,255,.7);
-      padding: .2rem .55rem; border-radius: 4px;
-      font-size: .78rem; cursor: pointer; transition: all .2s;
-    }
-    .lang-switch button.active,
-    .lang-switch button:hover {
-      background: var(--accent); border-color: var(--accent);
-      color: var(--primary);
-    }
-
-    /* ── HERO ────────────────────────────── */
+    /* ─── HERO ─── */
     .hero {
-      background: linear-gradient(135deg, var(--primary) 0%, #0F3460 60%, #1A6B8A 100%);
-      color: var(--white);
-      padding: 100px 6vw 90px;
+      background: var(--navy);
+      padding: 90px 6vw 80px;
       position: relative; overflow: hidden;
     }
-
-    .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    .hero-glow {
+      position: absolute; top: -120px; right: -80px;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(240,165,0,.15) 0%, transparent 70%);
+      pointer-events: none;
     }
-
-    .hero-inner {
-      max-width: 820px;
-      position: relative;
+    .hero-glow2 {
+      position: absolute; bottom: -200px; left: 10%;
+      width: 500px; height: 500px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(11,158,138,.12) 0%, transparent 70%);
+      pointer-events: none;
     }
-
-    .hero-badge {
+    .hero-inner { position: relative; max-width: 860px; }
+    .hero-eyebrow {
       display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(232,160,32,.15);
-      border: 1px solid rgba(232,160,32,.4);
-      color: var(--accent);
-      padding: .35rem .9rem; border-radius: 20px;
-      font-size: .82rem; font-weight: 600;
-      margin-bottom: 1.5rem;
+      background: rgba(240,165,0,.12); border: 1px solid rgba(240,165,0,.3);
+      color: var(--gold2); padding: .3rem .9rem; border-radius: 20px;
+      font-size: .8rem; font-weight: 600; margin-bottom: 1.6rem;
     }
-
     .hero h1 {
-      font-size: clamp(2rem, 4.5vw, 3.4rem);
-      line-height: 1.15;
-      margin-bottom: 1.5rem;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      color: var(--white); margin-bottom: 1.4rem;
     }
-
-    .hero h1 span { color: var(--accent); }
-
-    .hero p {
-      font-size: 1.12rem;
-      color: rgba(255,255,255,.8);
-      max-width: 600px;
-      margin-bottom: 2.5rem;
-      line-height: 1.7;
+    .hero h1 em { font-style: normal; color: var(--gold); }
+    .hero-sub {
+      font-size: 1.15rem; color: rgba(255,255,255,.72);
+      max-width: 580px; margin-bottom: 2.4rem; line-height: 1.75;
     }
-
-    .hero-actions {
-      display: flex; flex-wrap: wrap; gap: 1rem;
+    .hero-btns { display: flex; flex-wrap: wrap; gap: .9rem; margin-bottom: 3.5rem; }
+    .btn-gold {
+      background: var(--gold); color: var(--navy);
+      padding: .85rem 1.8rem; border-radius: 9px; font-weight: 700; font-size: 1rem;
+      border: none; cursor: pointer; transition: transform .15s, box-shadow .15s;
+      display: inline-flex; align-items: center; gap: .5rem;
     }
-
-    .btn-primary {
-      background: var(--accent);
-      color: var(--primary);
-      padding: .85rem 2rem;
-      border-radius: 8px;
-      font-weight: 700; font-size: 1rem;
-      border: none; cursor: pointer;
-      transition: transform .15s, box-shadow .15s;
-      display: inline-block;
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(240,165,0,.35); }
+    .btn-ghost {
+      background: rgba(255,255,255,.08); color: var(--white);
+      padding: .85rem 1.8rem; border-radius: 9px; font-weight: 600; font-size: 1rem;
+      border: 1px solid rgba(255,255,255,.2); cursor: pointer; transition: all .15s;
+      display: inline-flex; align-items: center; gap: .5rem;
     }
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(232,160,32,.35);
-    }
-
-    .btn-secondary {
-      background: rgba(255,255,255,.1);
-      color: var(--white);
-      padding: .85rem 2rem;
-      border-radius: 8px;
-      font-weight: 600; font-size: 1rem;
-      border: 1px solid rgba(255,255,255,.25);
-      cursor: pointer; transition: all .15s;
-      display: inline-block;
-    }
-    .btn-secondary:hover { background: rgba(255,255,255,.18); }
-
-    .hero-stats {
-      margin-top: 3.5rem;
+    .btn-ghost:hover { background: rgba(255,255,255,.14); }
+    .hero-proof {
       display: flex; flex-wrap: wrap; gap: 2.5rem;
+      padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,.1);
     }
+    .proof-item { display: flex; flex-direction: column; gap: .15rem; }
+    .proof-num { font-family: 'Sora', sans-serif; font-size: 2rem; font-weight: 800; color: var(--gold); }
+    .proof-label { font-size: .82rem; color: rgba(255,255,255,.6); }
 
-    .stat { display: flex; flex-direction: column; gap: .2rem; }
-    .stat-num {
-      font-size: 2rem; font-weight: 800;
-      font-family: 'Sora', sans-serif;
-      color: var(--accent);
+    /* ─── SECTION COMMONS ─── */
+    section { padding: 90px 6vw; }
+    .eyebrow {
+      font-size: .78rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--teal); margin-bottom: .6rem;
     }
-    .stat-label { font-size: .85rem; color: rgba(255,255,255,.65); }
+    .section-title { font-size: clamp(1.7rem, 3.2vw, 2.6rem); margin-bottom: .9rem; }
+    .section-sub { font-size: 1.05rem; color: var(--muted); max-width: 580px; margin-bottom: 3rem; line-height: 1.75; }
+    .centered { text-align: center; }
+    .centered .section-sub { margin-left: auto; margin-right: auto; }
 
-    /* ── SECTIONS COMMON ─────────────────── */
-    section { padding: 80px 6vw; }
-    .section-label {
-      font-size: .8rem; font-weight: 700; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--accent2);
-      margin-bottom: .6rem;
+    /* ─── PROBLEM STRIP ─── */
+    .problem-strip {
+      background: var(--light); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 48px 6vw;
     }
-    .section-title {
-      font-size: clamp(1.6rem, 3vw, 2.4rem);
-      margin-bottom: 1rem; line-height: 1.2;
+    .problem-inner { display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; }
+    .problem-label {
+      flex: 0 0 240px;
+      font-size: 1.35rem; font-weight: 700; font-family: 'Sora', sans-serif; color: var(--navy);
     }
-    .section-sub {
-      font-size: 1.05rem; color: var(--muted);
-      max-width: 620px; margin-bottom: 3rem; line-height: 1.7;
+    .problem-pills { display: flex; flex-wrap: wrap; gap: .7rem; flex: 1; padding-top: .2rem; }
+    .pill {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 30px; padding: .45rem 1rem;
+      font-size: .88rem; color: var(--text); font-weight: 500;
     }
+    .pill span { margin-right: .4rem; }
 
-    /* ── USE CASES ───────────────────────── */
-    .usecases { background: var(--light); }
-
+    /* ─── USE CASES ─── */
+    .usecases { background: var(--white); }
     .uc-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 1.4rem;
     }
-
     .uc-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2rem;
-      transition: box-shadow .2s, transform .2s;
+      border: 1.5px solid var(--border); border-radius: var(--r);
+      padding: 2rem; transition: border-color .2s, box-shadow .2s, transform .2s;
+      position: relative; overflow: hidden;
     }
-    .uc-card:hover {
-      box-shadow: 0 8px 32px rgba(10,35,66,.1);
-      transform: translateY(-3px);
+    .uc-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--teal));
+      opacity: 0; transition: opacity .2s;
     }
-
+    .uc-card:hover { border-color: transparent; box-shadow: 0 12px 40px rgba(13,31,60,.1); transform: translateY(-4px); }
+    .uc-card:hover::before { opacity: 1; }
     .uc-icon {
-      width: 48px; height: 48px;
-      background: linear-gradient(135deg, var(--primary), var(--accent2));
-      border-radius: 12px;
+      width: 50px; height: 50px; border-radius: 13px; margin-bottom: 1.3rem;
+      background: linear-gradient(135deg, var(--navy), var(--navy2));
+      display: flex; align-items: center; justify-content: center; font-size: 1.5rem;
+    }
+    .uc-card h3 { font-size: 1.08rem; margin-bottom: .55rem; color: var(--navy); }
+    .uc-card p { font-size: .92rem; color: var(--muted); line-height: 1.7; }
+    .uc-saving {
+      margin-top: 1.1rem; display: inline-flex; align-items: center; gap: .4rem;
+      background: rgba(11,158,138,.08); color: var(--teal);
+      padding: .3rem .8rem; border-radius: 20px; font-size: .8rem; font-weight: 600;
+    }
+
+    /* ─── HOW ─── */
+    .how { background: var(--light); }
+    .steps-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0; position: relative;
+    }
+    .steps-grid::before {
+      content: ''; position: absolute; top: 28px; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--teal));
+      z-index: 0;
+    }
+    .step { padding: 0 1.5rem 0 0; position: relative; z-index: 1; }
+    .step-dot {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--navy); border: 3px solid var(--gold);
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.4rem; margin-bottom: 1.2rem;
+      font-family: 'Sora', sans-serif; font-size: 1.1rem; font-weight: 800;
+      color: var(--gold); margin-bottom: 1.4rem;
+    }
+    .step h3 { font-size: .98rem; color: var(--navy); margin-bottom: .5rem; }
+    .step p { font-size: .88rem; color: var(--muted); line-height: 1.65; }
+    @media(max-width:768px){
+      .steps-grid::before { display: none; }
+      .steps-grid { gap: 2rem; }
     }
 
-    .uc-card h3 { font-size: 1.1rem; margin-bottom: .5rem; }
-    .uc-card p { font-size: .93rem; color: var(--muted); line-height: 1.65; }
-
-    .uc-tag {
-      display: inline-block;
-      margin-top: .9rem;
-      background: rgba(10,35,66,.07);
-      color: var(--primary);
-      padding: .2rem .7rem; border-radius: 20px;
-      font-size: .78rem; font-weight: 600;
-    }
-
-    /* ── HOW IT WORKS ────────────────────── */
-    .how { background: var(--white); }
-
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 2rem; counter-reset: steps;
-    }
-
-    .step {
-      position: relative;
-      padding: 2rem;
-      border-left: 3px solid var(--accent);
-      background: var(--light);
-      border-radius: 0 var(--radius) var(--radius) 0;
-    }
-
-    .step-num {
-      font-family: 'Sora', sans-serif;
-      font-size: 2.5rem; font-weight: 800;
-      color: var(--accent); opacity: .3;
-      position: absolute; top: 1rem; right: 1.2rem;
-    }
-
-    .step h3 { font-size: 1rem; margin-bottom: .5rem; }
-    .step p { font-size: .9rem; color: var(--muted); line-height: 1.6; }
-
-    /* ── WHY US ──────────────────────────── */
-    .why { background: var(--primary); color: var(--white); }
+    /* ─── WHY ─── */
+    .why { background: var(--navy); }
+    .why .eyebrow { color: var(--gold2); }
     .why .section-title { color: var(--white); }
-    .why .section-sub { color: rgba(255,255,255,.7); }
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 1.5rem;
-    }
-
+    .why .section-sub { color: rgba(255,255,255,.65); }
+    .why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; }
     .why-card {
-      background: rgba(255,255,255,.06);
-      border: 1px solid rgba(255,255,255,.1);
-      border-radius: var(--radius);
-      padding: 1.8rem;
+      background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.09);
+      border-radius: var(--r); padding: 1.8rem; transition: background .2s;
     }
+    .why-card:hover { background: rgba(255,255,255,.08); }
+    .why-icon { font-size: 1.8rem; margin-bottom: .9rem; }
+    .why-card h3 { font-size: 1rem; color: var(--gold2); margin-bottom: .5rem; }
+    .why-card p { font-size: .88rem; color: rgba(255,255,255,.65); line-height: 1.7; }
 
-    .why-card h3 {
-      font-size: 1rem; color: var(--accent);
-      margin-bottom: .6rem;
-      display: flex; align-items: center; gap: .5rem;
-    }
-    .why-card p { font-size: .9rem; color: rgba(255,255,255,.7); line-height: 1.65; }
-
-    /* ── CONTACT ─────────────────────────── */
+    /* ─── CONTACT ─── */
     .contact { background: var(--light); }
+    .contact-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    @media(max-width:860px){ .contact-wrap { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .contact-left h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 1rem; }
+    .contact-left p { font-size: 1rem; color: var(--muted); line-height: 1.75; margin-bottom: 1.8rem; }
+    .contact-perks { display: flex; flex-direction: column; gap: .75rem; }
+    .perk { display: flex; align-items: flex-start; gap: .75rem; }
+    .perk-icon { font-size: 1.1rem; margin-top: .1rem; }
+    .perk-text { font-size: .92rem; color: var(--text); line-height: 1.5; }
+    .perk-text strong { color: var(--navy); }
 
-    .contact-box {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 3rem;
-      max-width: 640px;
+    .contact-form {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 16px; padding: 2.5rem;
     }
-
-    .form-group { margin-bottom: 1.2rem; }
-    .form-group label {
-      display: block; font-size: .85rem; font-weight: 600;
-      margin-bottom: .4rem; color: var(--text);
+    .form-title { font-size: 1.2rem; font-family: 'Sora', sans-serif; color: var(--navy); margin-bottom: 1.5rem; }
+    .fg { margin-bottom: 1.1rem; }
+    .fg label { display: block; font-size: .82rem; font-weight: 600; color: var(--text); margin-bottom: .35rem; }
+    .fg input, .fg textarea, .fg select {
+      width: 100%; padding: .72rem .95rem;
+      border: 1.5px solid var(--border); border-radius: 8px;
+      font-size: .93rem; font-family: 'Inter', sans-serif;
+      color: var(--text); background: var(--white);
+      transition: border-color .2s, box-shadow .2s;
     }
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-      width: 100%;
-      padding: .75rem 1rem;
-      border: 1.5px solid var(--border);
-      border-radius: 7px;
-      font-size: .95rem;
-      font-family: 'Inter', sans-serif;
-      color: var(--text);
-      background: var(--white);
-      transition: border-color .2s;
+    .fg input:focus, .fg textarea:focus, .fg select:focus {
+      outline: none; border-color: var(--teal);
+      box-shadow: 0 0 0 3px rgba(11,158,138,.1);
     }
-    .form-group input:focus,
-    .form-group textarea:focus,
-    .form-group select:focus {
-      outline: none;
-      border-color: var(--accent2);
-    }
-    .form-group textarea { resize: vertical; min-height: 110px; }
-
+    .fg textarea { resize: vertical; min-height: 100px; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    @media(max-width:500px){ .form-row { grid-template-columns: 1fr; } }
+    .btn-submit {
+      width: 100%; background: var(--navy); color: var(--white);
+      padding: .9rem; border: none; border-radius: 9px;
+      font-size: 1rem; font-weight: 700; cursor: pointer;
+      transition: background .2s, transform .15s;
+      display: flex; align-items: center; justify-content: center; gap: .5rem;
+    }
+    .btn-submit:hover { background: #1a3a6e; transform: translateY(-1px); }
+    .form-note { text-align: center; font-size: .78rem; color: var(--muted); margin-top: .8rem; }
 
-    /* ── FOOTER ──────────────────────────── */
+    /* ─── FOOTER ─── */
     footer {
-      background: var(--primary);
-      color: rgba(255,255,255,.6);
-      padding: 2.5rem 6vw;
-      display: flex; flex-wrap: wrap;
-      justify-content: space-between; align-items: center;
-      gap: 1rem;
-      font-size: .85rem;
+      background: #090F1C; color: rgba(255,255,255,.45);
+      padding: 2rem 6vw;
+      display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+      gap: 1rem; font-size: .82rem;
     }
-    footer a { color: rgba(255,255,255,.6); }
-    footer a:hover { color: var(--accent); }
-    .footer-logo { color: var(--white); font-weight: 700; font-family: 'Sora', sans-serif; }
-
-    /* ── RESPONSIVE ──────────────────────── */
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .form-row { grid-template-columns: 1fr; }
-      .hero-stats { gap: 1.5rem; }
-      .contact-box { padding: 1.8rem; }
-    }
-
-    /* ── LANG TOGGLE ─────────────────────── */
-    [data-lang="en"] { display: none; }
-    body.lang-en [data-lang="de"] { display: none; }
-    body.lang-en [data-lang="en"] { display: revert; }
+    footer .logo { font-size: 1rem; }
+    footer a { color: rgba(255,255,255,.45); transition: color .2s; }
+    footer a:hover { color: var(--gold); }
+    .footer-links { display: flex; gap: 1.5rem; }
   </style>
 </head>
 <body>
 
-<!-- ── NAV ────────────────────────────────────────────── -->
+<!-- NAV -->
 <nav>
   <a href="/" class="logo">
-    <div class="logo-mark">🦞</div>
-    <span>OpenClaw Consulting</span>
+    <div class="logo-icon">🦞</div>
+    OpenClaw Consulting
   </a>
-  <ul class="nav-links">
-    <li><a href="#usecases" data-lang="de">Anwendungsfälle</a><a href="#usecases" data-lang="en">Use Cases</a></li>
-    <li><a href="#how" data-lang="de">Vorgehen</a><a href="#how" data-lang="en">How It Works</a></li>
-    <li><a href="#why" data-lang="de">Warum wir</a><a href="#why" data-lang="en">Why Us</a></li>
-    <li><a href="#contact" class="nav-cta" data-lang="de">Kontakt</a><a href="#contact" class="nav-cta" data-lang="en">Contact</a></li>
-  </ul>
-  <div class="lang-switch">
-    <button class="active" onclick="setLang('de')">DE</button>
-    <button onclick="setLang('en')">EN</button>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#usecases" data-de>Anwendungsfälle</a><a href="#usecases" data-en>Use Cases</a></li>
+      <li><a href="#how" data-de>Vorgehen</a><a href="#how" data-en>How It Works</a></li>
+      <li><a href="#why" data-de>Warum wir</a><a href="#why" data-en>Why Us</a></li>
+      <li><a href="#contact" class="nav-cta" data-de>Kontakt</a><a href="#contact" class="nav-cta" data-en>Contact</a></li>
+    </ul>
+    <div class="lang-btns">
+      <button class="on" onclick="setLang('de')">DE</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
   </div>
 </nav>
 
-<!-- ── HERO ───────────────────────────────────────────── -->
+<!-- HERO -->
 <section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
   <div class="hero-inner">
 
-    <div class="hero-badge" data-lang="de">🇨🇭 KI-Beratung für die Schweiz</div>
-    <div class="hero-badge" data-lang="en">🇨🇭 AI Consulting for Switzerland</div>
+    <div class="hero-eyebrow" data-de>🇨🇭 KI-Automatisierung für Schweizer Unternehmen</div>
+    <div class="hero-eyebrow" data-en>🇨🇭 AI Automation for Swiss Businesses</div>
 
-    <h1 data-lang="de">
-      Mehr Zeit für das,<br/>
-      was <span>wirklich zählt</span>.
-    </h1>
-    <h1 data-lang="en">
-      More time for what<br/>
-      <span>truly matters</span>.
-    </h1>
+    <h1 data-de>Ihr Team soll <em>denken</em>,<br/>nicht tippen.</h1>
+    <h1 data-en>Let your team <em>think</em>,<br/>not type.</h1>
 
-    <p data-lang="de">
-      Wir automatisieren repetitive Prozesse in Ihrem Unternehmen – sicher, massgeschneidert und messbar. Kein Tech-Overhead, keine Datenweitergabe, kein Rätselraten.
+    <p class="hero-sub" data-de>
+      Wir automatisieren die Aufgaben, die täglich wertvolle Stunden kosten – Angebote schreiben, E-Mails sortieren, Berichte erstellen, Daten pflegen. Damit Ihr Team sich auf das konzentrieren kann, was wirklich zählt.
     </p>
-    <p data-lang="en">
-      We automate repetitive processes in your business – securely, tailored, and measurably. No tech overhead, no data sharing, no guesswork.
+    <p class="hero-sub" data-en>
+      We automate the tasks that consume valuable hours every day – writing offers, sorting emails, creating reports, maintaining data. So your team can focus on what really counts.
     </p>
 
-    <div class="hero-actions">
-      <a href="#contact" class="btn-primary" data-lang="de">Kostenloses Erstgespräch</a>
-      <a href="#contact" class="btn-primary" data-lang="en">Free Initial Consultation</a>
-      <a href="#usecases" class="btn-secondary" data-lang="de">Anwendungsfälle ansehen</a>
-      <a href="#usecases" class="btn-secondary" data-lang="en">See Use Cases</a>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-gold" data-de>→ Kostenloses Erstgespräch</a>
+      <a href="#contact" class="btn-gold" data-en>→ Free Initial Consultation</a>
+      <a href="#usecases" class="btn-ghost" data-de>Beispiele ansehen</a>
+      <a href="#usecases" class="btn-ghost" data-en>See Examples</a>
     </div>
 
-    <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-num">25–40%</span>
-        <span class="stat-label" data-lang="de">Kosteneinsparung im ersten Jahr</span>
-        <span class="stat-label" data-lang="en">Cost savings in year one</span>
+    <div class="hero-proof">
+      <div class="proof-item">
+        <span class="proof-num">8+ h</span>
+        <span class="proof-label" data-de>Zeitersparnis pro Person & Woche</span>
+        <span class="proof-label" data-en>Hours saved per person / week</span>
       </div>
-      <div class="stat">
-        <span class="stat-num">8+ h</span>
-        <span class="stat-label" data-lang="de">Zeitersparnis pro Person/Woche</span>
-        <span class="stat-label" data-lang="en">Hours saved per person/week</span>
+      <div class="proof-item">
+        <span class="proof-num">2–4 Wo.</span>
+        <span class="proof-label" data-de>Bis zur ersten laufenden Lösung</span>
+        <span class="proof-label" data-en>Until first running solution</span>
       </div>
-      <div class="stat">
-        <span class="stat-num">100%</span>
-        <span class="stat-label" data-lang="de">Datensouveränität</span>
-        <span class="stat-label" data-lang="en">Data sovereignty</span>
+      <div class="proof-item">
+        <span class="proof-num">100%</span>
+        <span class="proof-label" data-de>Datensouveränität — Ihre Daten bleiben Ihre Daten</span>
+        <span class="proof-label" data-en>Data sovereignty — your data stays yours</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── USE CASES ──────────────────────────────────────── -->
+<!-- PROBLEM STRIP -->
+<div class="problem-strip">
+  <div class="problem-inner">
+    <div class="problem-label" data-de>Kommt Ihnen das bekannt vor?</div>
+    <div class="problem-label" data-en>Does this sound familiar?</div>
+    <div class="problem-pills">
+      <span class="pill" data-de><span>😩</span>Angebote von Hand schreiben</span>
+      <span class="pill" data-de><span>📬</span>E-Mail-Flut jeden Morgen</span>
+      <span class="pill" data-de><span>📊</span>Reports manuell zusammenkopieren</span>
+      <span class="pill" data-de><span>🔁</span>Immer gleiche Texte neu tippen</span>
+      <span class="pill" data-de><span>📁</span>Dokumente mühsam suchen</span>
+      <span class="pill" data-de><span>🐌</span>Interne Prozesse im Schneckentempo</span>
+      <span class="pill" data-en><span>😩</span>Writing offers by hand</span>
+      <span class="pill" data-en><span>📬</span>Email flood every morning</span>
+      <span class="pill" data-en><span>📊</span>Copy-pasting reports manually</span>
+      <span class="pill" data-en><span>🔁</span>Retyping the same texts again</span>
+      <span class="pill" data-en><span>📁</span>Searching for documents painfully</span>
+      <span class="pill" data-en><span>🐌</span>Internal processes at a snail's pace</span>
+    </div>
+  </div>
+</div>
+
+<!-- USE CASES -->
 <section class="usecases" id="usecases">
-  <div class="section-label" data-lang="de">Was wir automatisieren</div>
-  <div class="section-label" data-lang="en">What We Automate</div>
-  <h2 class="section-title" data-lang="de">Anwendungsfälle mit echtem Impact</h2>
-  <h2 class="section-title" data-lang="en">Use Cases With Real Impact</h2>
-  <p class="section-sub" data-lang="de">Jedes Projekt beginnt dort, wo der Schmerz am grössten ist – und liefert messbare Ergebnisse innerhalb von Wochen.</p>
-  <p class="section-sub" data-lang="en">Every project starts where the pain is greatest – and delivers measurable results within weeks.</p>
+  <div class="eyebrow" data-de>Was wir lösen</div>
+  <div class="eyebrow" data-en>What We Solve</div>
+  <h2 class="section-title" data-de>Automatisierungen mit sofort spürbarem Effekt</h2>
+  <h2 class="section-title" data-en>Automations With Immediately Noticeable Effect</h2>
+  <p class="section-sub" data-de>Kein KI-Hype ohne Substanz. Jeder Anwendungsfall ist erprobt, messbar und innerhalb weniger Wochen einsatzbereit.</p>
+  <p class="section-sub" data-en>No AI hype without substance. Every use case is proven, measurable, and ready within a few weeks.</p>
 
   <div class="uc-grid">
-
     <div class="uc-card">
       <div class="uc-icon">📄</div>
-      <h3 data-lang="de">Automatische Angebotserstellung</h3>
-      <h3 data-lang="en">Automated Offer Creation</h3>
-      <p data-lang="de">Aus einer kurzen Briefing-Eingabe entsteht ein strukturiertes, professionelles Angebot – inklusive Preiskalkulation, Leistungsbeschreibung und CI-konformem Layout. In Minuten statt Stunden.</p>
-      <p data-lang="en">A short briefing input generates a structured, professional proposal – including pricing, scope description, and CI-compliant layout. In minutes, not hours.</p>
-      <span class="uc-tag" data-lang="de">⏱ 3–5 h/Woche gespart</span>
-      <span class="uc-tag" data-lang="en">⏱ 3–5 h/week saved</span>
+      <h3 data-de>Angebote & Offerten automatisch erstellen</h3>
+      <h3 data-en>Automatic Offer & Proposal Creation</h3>
+      <p data-de>Kurze Briefing-Eingabe → vollständiges, CI-konformes Angebot mit Kalkulation und Leistungsbeschreibung. In Minuten statt Stunden.</p>
+      <p data-en>Short briefing input → complete, CI-compliant proposal with calculation and scope description. In minutes, not hours.</p>
+      <div class="uc-saving">⏱ 3–5 Stunden/Woche gespart</div>
+      <div class="uc-saving" data-en style="display:none">⏱ 3–5 hours/week saved</div>
     </div>
 
     <div class="uc-card">
       <div class="uc-icon">📬</div>
-      <h3 data-lang="de">E-Mail-Triage & Priorisierung</h3>
-      <h3 data-lang="en">Email Triage & Prioritisation</h3>
-      <p data-lang="de">KI klassifiziert eingehende E-Mails automatisch, schlägt Antworten vor und erkennt dringende Anfragen – direkt integriert in Ihr bestehendes Postfach.</p>
-      <p data-lang="en">AI automatically classifies incoming emails, suggests replies, and detects urgent requests – directly integrated into your existing inbox.</p>
-      <span class="uc-tag" data-lang="de">⏱ 1–2 h/Tag gespart</span>
-      <span class="uc-tag" data-lang="en">⏱ 1–2 h/day saved</span>
+      <h3 data-de>E-Mail-Triage & automatische Antwortvorschläge</h3>
+      <h3 data-en>Email Triage & Automatic Reply Suggestions</h3>
+      <p data-de>KI klassifiziert eingehende E-Mails, priorisiert dringende Anfragen und schlägt passende Antworten vor – direkt in Ihrem Postfach.</p>
+      <p data-en>AI classifies incoming emails, prioritises urgent requests and suggests fitting replies – directly in your inbox.</p>
+      <div class="uc-saving">⏱ 1–2 Stunden/Tag gespart</div>
+      <div class="uc-saving" data-en style="display:none">⏱ 1–2 hours/day saved</div>
     </div>
 
     <div class="uc-card">
       <div class="uc-icon">✍️</div>
-      <h3 data-lang="de">Content-Erstellung & Marketing</h3>
-      <h3 data-lang="en">Content Creation & Marketing</h3>
-      <p data-lang="de">Von Social-Media-Posts bis zu Newslettern und Produktbeschreibungen: KI-gestützte Workflows produzieren markenkonformen Content auf Knopfdruck – mehrsprachig, skalierbar.</p>
-      <p data-lang="en">From social media posts to newsletters and product descriptions: AI-powered workflows produce brand-consistent content on demand – multilingual, scalable.</p>
-      <span class="uc-tag" data-lang="de">⏱ 5–10 h/Woche gespart</span>
-      <span class="uc-tag" data-lang="en">⏱ 5–10 h/week saved</span>
+      <h3 data-de>Content-Erstellung auf Knopfdruck</h3>
+      <h3 data-en>Content Creation at the Push of a Button</h3>
+      <p data-de>Social-Media-Posts, Newsletter, Produkttexte, Stellenanzeigen – markenkonform, mehrsprachig, skalierbar. Einmal einrichten, dauerhaft nutzen.</p>
+      <p data-en>Social media posts, newsletters, product texts, job ads – brand-consistent, multilingual, scalable. Set up once, use permanently.</p>
+      <div class="uc-saving">⏱ 5–10 Stunden/Woche gespart</div>
+      <div class="uc-saving" data-en style="display:none">⏱ 5–10 hours/week saved</div>
     </div>
 
     <div class="uc-card">
       <div class="uc-icon">🔄</div>
-      <h3 data-lang="de">Interne Prozessautomatisierung</h3>
-      <h3 data-lang="en">Internal Process Automation</h3>
-      <p data-lang="de">Wiederkehrende Aufgaben wie Berichtserstellung, Datenpflege, Rechnungsverarbeitung oder Meeting-Protokolle werden vollautomatisch erledigt – zuverlässig und nachvollziehbar.</p>
-      <p data-lang="en">Recurring tasks like report generation, data maintenance, invoice processing, or meeting minutes are handled fully automatically – reliably and traceably.</p>
-      <span class="uc-tag" data-lang="de">⏱ Bis zu 30% Prozesskosten gespart</span>
-      <span class="uc-tag" data-lang="en">⏱ Up to 30% process cost saved</span>
+      <h3 data-de>Interne Abläufe automatisieren</h3>
+      <h3 data-en>Automate Internal Workflows</h3>
+      <p data-de>Rechnungsverarbeitung, Meeting-Protokolle, Datenpflege, Berichtswesen – wiederkehrende Aufgaben erledigen sich von selbst. Zuverlässig und nachvollziehbar.</p>
+      <p data-en>Invoice processing, meeting minutes, data maintenance, reporting – recurring tasks handle themselves. Reliably and traceably.</p>
+      <div class="uc-saving">⏱ Bis zu 30% Prozesskosten einsparen</div>
+      <div class="uc-saving" data-en style="display:none">⏱ Save up to 30% process costs</div>
     </div>
 
     <div class="uc-card">
       <div class="uc-icon">📊</div>
-      <h3 data-lang="de">Reporting & Datenanalyse</h3>
-      <h3 data-lang="en">Reporting & Data Analysis</h3>
-      <p data-lang="de">Dashboards und Reports, die sich selbst aktualisieren. KI fasst Daten zusammen, erkennt Anomalien und liefert Handlungsempfehlungen – automatisiert, täglich oder wöchentlich.</p>
-      <p data-lang="en">Dashboards and reports that update themselves. AI summarises data, detects anomalies, and delivers action recommendations – automated, daily or weekly.</p>
-      <span class="uc-tag" data-lang="de">⏱ 2–4 h/Woche gespart</span>
-      <span class="uc-tag" data-lang="en">⏱ 2–4 h/week saved</span>
+      <h3 data-de>Automatische Reports & Dashboards</h3>
+      <h3 data-en>Automated Reports & Dashboards</h3>
+      <p data-de>Daten aus verschiedenen Quellen werden täglich zusammengeführt, analysiert und als verständlicher Report geliefert – ohne manuelles Eingreifen.</p>
+      <p data-en>Data from various sources is merged, analysed and delivered as a clear report daily – without manual intervention.</p>
+      <div class="uc-saving">⏱ 2–4 Stunden/Woche gespart</div>
+      <div class="uc-saving" data-en style="display:none">⏱ 2–4 hours/week saved</div>
     </div>
 
     <div class="uc-card">
       <div class="uc-icon">🔍</div>
-      <h3 data-lang="de">Wissensmanagement & Suche</h3>
-      <h3 data-lang="en">Knowledge Management & Search</h3>
-      <p data-lang="de">Interner KI-Assistent, der Dokumente, Verträge und Handbücher durchsucht und auf Fragen antwortet – ohne dass Daten das Unternehmen verlassen.</p>
-      <p data-lang="en">An internal AI assistant that searches documents, contracts, and manuals and answers questions – without data leaving the company.</p>
-      <span class="uc-tag" data-lang="de">⏱ Sofortige Antworten statt Suchen</span>
-      <span class="uc-tag" data-lang="en">⏱ Instant answers instead of searching</span>
+      <h3 data-de>Ihr persönlicher KI-Assistent für Dokumente</h3>
+      <h3 data-en>Your Personal AI Assistant for Documents</h3>
+      <p data-de>Stellen Sie Fragen zu Ihren Verträgen, Handbüchern oder internen Dokumenten – und erhalten Sie sofort präzise Antworten. Ohne dass Daten das Unternehmen verlassen.</p>
+      <p data-en>Ask questions about your contracts, manuals or internal documents – and get precise answers instantly. Without data leaving your company.</p>
+      <div class="uc-saving">⏱ Sofort statt stundenlang suchen</div>
+      <div class="uc-saving" data-en style="display:none">⏱ Instantly instead of hours of searching</div>
     </div>
-
   </div>
 </section>
 
-<!-- ── HOW IT WORKS ────────────────────────────────────── -->
+<!-- HOW -->
 <section class="how" id="how">
-  <div class="section-label" data-lang="de">Unser Vorgehen</div>
-  <div class="section-label" data-lang="en">Our Approach</div>
-  <h2 class="section-title" data-lang="de">Von der Idee zur laufenden Lösung</h2>
-  <h2 class="section-title" data-lang="en">From Idea to Running Solution</h2>
-  <p class="section-sub" data-lang="de">Kein langwieriges Projektmanagement. Wir liefern schnell, iterieren gemeinsam und übergeben Lösungen, die Ihr Team selbst bedienen kann.</p>
-  <p class="section-sub" data-lang="en">No lengthy project management. We deliver fast, iterate together, and hand over solutions your team can operate themselves.</p>
+  <div class="eyebrow centered" data-de>Unser Vorgehen</div>
+  <div class="eyebrow centered" data-en>Our Approach</div>
+  <h2 class="section-title centered" data-de>Von der Idee zur laufenden Lösung in 4 Schritten</h2>
+  <h2 class="section-title centered" data-en>From Idea to Running Solution in 4 Steps</h2>
+  <p class="section-sub centered" data-de>Kein monatelanges Projekt. Wir liefern schnell, iterieren gemeinsam und übergeben Lösungen, die Ihr Team selbst bedienen kann.</p>
+  <p class="section-sub centered" data-en>No months-long project. We deliver fast, iterate together, and hand over solutions your team can run themselves.</p>
 
-  <div class="steps">
+  <div class="steps-grid">
     <div class="step">
-      <span class="step-num">01</span>
-      <h3 data-lang="de">Analyse & Priorisierung</h3>
-      <h3 data-lang="en">Analysis & Prioritisation</h3>
-      <p data-lang="de">Wir identifizieren in einem kostenlosen Erstgespräch die drei grössten Zeitfresser in Ihrem Betrieb und berechnen das Einsparpotenzial.</p>
-      <p data-lang="en">In a free initial consultation, we identify the three biggest time wasters in your business and calculate the savings potential.</p>
+      <div class="step-dot">01</div>
+      <h3 data-de>Analyse & Fokus</h3>
+      <h3 data-en>Analysis & Focus</h3>
+      <p data-de>Im kostenlosen Erstgespräch identifizieren wir gemeinsam die drei grössten Zeitfresser in Ihrem Betrieb und berechnen das Einsparpotenzial.</p>
+      <p data-en>In the free initial consultation we identify together the three biggest time wasters in your business and calculate the savings potential.</p>
     </div>
     <div class="step">
-      <span class="step-num">02</span>
-      <h3 data-lang="de">Pilotprojekt</h3>
-      <h3 data-lang="en">Pilot Project</h3>
-      <p data-lang="de">Innerhalb von 2–4 Wochen liefern wir einen funktionierenden Prototypen für den wichtigsten Use Case – mit messbaren Ergebnissen.</p>
-      <p data-lang="en">Within 2–4 weeks we deliver a working prototype for the most important use case – with measurable results.</p>
+      <div class="step-dot">02</div>
+      <h3 data-de>Prototyp in 2–4 Wochen</h3>
+      <h3 data-en>Prototype in 2–4 Weeks</h3>
+      <p data-de>Wir bauen einen funktionierenden Prototypen für den wichtigsten Anwendungsfall – mit messbaren Ergebnissen, bevor Sie weiter investieren.</p>
+      <p data-en>We build a working prototype for the most important use case – with measurable results before you invest further.</p>
     </div>
     <div class="step">
-      <span class="step-num">03</span>
-      <h3 data-lang="de">Integration & Schulung</h3>
-      <h3 data-lang="en">Integration & Training</h3>
-      <p data-lang="de">Die Lösung wird in Ihre bestehende Infrastruktur integriert. Ihr Team erhält praxisnahe Schulungen und vollständige Dokumentation.</p>
-      <p data-lang="en">The solution is integrated into your existing infrastructure. Your team receives hands-on training and complete documentation.</p>
+      <div class="step-dot">03</div>
+      <h3 data-de>Integration & Schulung</h3>
+      <h3 data-en>Integration & Training</h3>
+      <p data-de>Die Lösung wird in Ihre bestehende Infrastruktur eingebunden. Ihr Team erhält eine praxisnahe Schulung und vollständige Dokumentation.</p>
+      <p data-en>The solution is integrated into your existing infrastructure. Your team gets hands-on training and full documentation.</p>
     </div>
     <div class="step">
-      <span class="step-num">04</span>
-      <h3 data-lang="de">Betrieb & Weiterentwicklung</h3>
-      <h3 data-lang="en">Operations & Iteration</h3>
-      <p data-lang="de">Wir begleiten Sie langfristig – mit Monitoring, Updates und der Erweiterung auf neue Prozesse sobald die erste Lösung läuft.</p>
-      <p data-lang="en">We support you long-term – with monitoring, updates, and expansion to new processes once the first solution is running.</p>
+      <div class="step-dot">04</div>
+      <h3 data-de>Betrieb & Weiterentwicklung</h3>
+      <h3 data-en>Operations & Growth</h3>
+      <p data-de>Wir begleiten Sie langfristig mit Monitoring und Updates – und erweitern auf neue Prozesse, sobald die erste Lösung läuft.</p>
+      <p data-en>We support you long-term with monitoring and updates – and expand to new processes as soon as the first solution is running.</p>
     </div>
   </div>
 </section>
 
-<!-- ── WHY US ──────────────────────────────────────────── -->
+<!-- WHY -->
 <section class="why" id="why">
-  <div class="section-label" style="color: var(--accent);" data-lang="de">Warum OpenClaw</div>
-  <div class="section-label" style="color: var(--accent);" data-lang="en">Why OpenClaw</div>
-  <h2 class="section-title" data-lang="de">Sicher. Pragmatisch. Messbar.</h2>
-  <h2 class="section-title" data-lang="en">Secure. Pragmatic. Measurable.</h2>
-  <p class="section-sub" data-lang="de">KI-Automatisierung muss keine Black Box sein. Wir bauen Lösungen, die Sie verstehen, kontrollieren und bei Bedarf selbst anpassen können.</p>
-  <p class="section-sub" data-lang="en">AI automation doesn't have to be a black box. We build solutions you understand, control, and can adapt yourself when needed.</p>
+  <div class="eyebrow" data-de>Warum OpenClaw</div>
+  <div class="eyebrow" data-en>Why OpenClaw</div>
+  <h2 class="section-title" data-de>Sicher. Schnell. Ehrlich.</h2>
+  <h2 class="section-title" data-en>Secure. Fast. Honest.</h2>
+  <p class="section-sub" data-de>Wir verkaufen keine KI-Träume. Wir liefern funktionierende Lösungen, die sich rechnen – oder wir sagen es Ihnen vorher.</p>
+  <p class="section-sub" data-en>We don't sell AI dreams. We deliver working solutions that pay off – or we tell you upfront if they won't.</p>
 
   <div class="why-grid">
     <div class="why-card">
-      <h3>🔒 <span data-lang="de">Datensicherheit first</span><span data-lang="en">Data Security First</span></h3>
-      <p data-lang="de">Ihre Daten verlassen das Unternehmen nicht ohne Ihr Einverständnis. Wir setzen auf On-Premise-Lösungen und schweizerkonforme Datenhaltung wo immer möglich.</p>
-      <p data-lang="en">Your data doesn't leave the company without your consent. We use on-premise solutions and Swiss-compliant data storage wherever possible.</p>
+      <div class="why-icon">🔒</div>
+      <h3 data-de>Ihre Daten bleiben bei Ihnen</h3>
+      <h3 data-en>Your Data Stays With You</h3>
+      <p data-de>On-Premise-Lösungen und schweizerkonforme Datenhaltung, wo immer möglich. Keine Weitergabe ohne Ihr ausdrückliches Einverständnis.</p>
+      <p data-en>On-premise solutions and Swiss-compliant data storage wherever possible. No sharing without your explicit consent.</p>
     </div>
     <div class="why-card">
-      <h3>⚡ <span data-lang="de">Schnelle Umsetzung</span><span data-lang="en">Fast Implementation</span></h3>
-      <p data-lang="de">Keine monatelangen Konzeptphasen. Innerhalb von Wochen haben Sie eine laufende Lösung – nicht eine Präsentation darüber.</p>
-      <p data-lang="en">No months-long concept phases. Within weeks you have a running solution – not a presentation about one.</p>
+      <div class="why-icon">⚡</div>
+      <h3 data-de>Resultate in Wochen, nicht Monaten</h3>
+      <h3 data-en>Results in Weeks, Not Months</h3>
+      <p data-de>Keine langen Konzeptphasen. Innerhalb von 2–4 Wochen haben Sie eine laufende Lösung – nicht eine Präsentation darüber.</p>
+      <p data-en>No long concept phases. Within 2–4 weeks you have a running solution – not a presentation about one.</p>
     </div>
     <div class="why-card">
-      <h3>🎯 <span data-lang="de">ROI-fokussiert</span><span data-lang="en">ROI-Focused</span></h3>
-      <p data-lang="de">Wir rechnen den Business Case vor dem Projekt durch. Wenn die Zahlen nicht stimmen, sagen wir es Ihnen – und empfehlen keinen Auftrag, der sich nicht lohnt.</p>
-      <p data-lang="en">We calculate the business case before the project. If the numbers don't add up, we tell you – and don't recommend a project that isn't worth it.</p>
+      <div class="why-icon">🎯</div>
+      <h3 data-de>Business Case zuerst</h3>
+      <h3 data-en>Business Case First</h3>
+      <p data-de>Wir rechnen den ROI vor dem Projekt durch. Wenn sich's nicht lohnt, sagen wir's Ihnen – und empfehlen keinen Auftrag, der sich nicht rechnet.</p>
+      <p data-en>We calculate ROI before the project. If it doesn't pay off, we tell you – and don't recommend a project that doesn't add up.</p>
     </div>
     <div class="why-card">
-      <h3>🇨🇭 <span data-lang="de">Lokal & verlässlich</span><span data-lang="en">Local & Reliable</span></h3>
-      <p data-lang="de">Wir sind in der Schweiz ansässig, kennen lokale Compliance-Anforderungen und sind persönlich erreichbar – kein Offshore-Support, kein Ticket-System.</p>
-      <p data-lang="en">We are based in Switzerland, know local compliance requirements, and are personally reachable – no offshore support, no ticket system.</p>
+      <div class="why-icon">🇨🇭</div>
+      <h3 data-de>Lokal verankert, persönlich erreichbar</h3>
+      <h3 data-en>Locally Rooted, Personally Reachable</h3>
+      <p data-de>Wir sind in der Schweiz ansässig, kennen lokale Compliance-Anforderungen und sind direkt für Sie da – kein Offshore-Support, kein Ticket-System.</p>
+      <p data-en>Based in Switzerland, familiar with local compliance requirements, and directly available for you – no offshore support, no ticket system.</p>
     </div>
     <div class="why-card">
-      <h3>🔧 <span data-lang="de">Vendor-agnostisch</span><span data-lang="en">Vendor-Agnostic</span></h3>
-      <p data-lang="de">Wir sind an keine Plattform gebunden. Wir wählen das beste Werkzeug für Ihre Anforderungen – ob OpenAI, Anthropic, Open-Source oder Eigenentwicklung.</p>
-      <p data-lang="en">We are not tied to any platform. We choose the best tool for your requirements – whether OpenAI, Anthropic, open-source, or custom-built.</p>
+      <div class="why-icon">🔧</div>
+      <h3 data-de>Unabhängig von Anbietern</h3>
+      <h3 data-en>Vendor-Independent</h3>
+      <p data-de>Wir sind an keine Plattform gebunden und wählen das beste Werkzeug für Ihre Anforderungen – ob OpenAI, Open-Source oder Eigenentwicklung.</p>
+      <p data-en>We are not tied to any platform and choose the best tool for your needs – whether OpenAI, open-source, or custom-built.</p>
     </div>
     <div class="why-card">
-      <h3>📚 <span data-lang="de">Wissenstransfer inklusive</span><span data-lang="en">Knowledge Transfer Included</span></h3>
-      <p data-lang="de">Jede Lösung liefern wir mit vollständiger Dokumentation und Schulung – so dass Ihr Team dauerhaft selbständig damit arbeiten kann.</p>
-      <p data-lang="en">Every solution comes with full documentation and training – so your team can work with it independently in the long run.</p>
+      <div class="why-icon">📚</div>
+      <h3 data-de>Ihr Team wird selbstständig</h3>
+      <h3 data-en>Your Team Becomes Independent</h3>
+      <p data-de>Jede Lösung liefern wir mit vollständiger Dokumentation und Schulung – damit Ihr Team dauerhaft ohne uns auskommt, wenn es das möchte.</p>
+      <p data-en>Every solution comes with full documentation and training – so your team can operate independently in the long run if they wish.</p>
     </div>
   </div>
 </section>
 
-<!-- ── CONTACT ─────────────────────────────────────────── -->
+<!-- CONTACT -->
 <section class="contact" id="contact">
-  <div class="section-label" data-lang="de">Kontakt</div>
-  <div class="section-label" data-lang="en">Contact</div>
-  <h2 class="section-title" data-lang="de">Kostenloses Erstgespräch vereinbaren</h2>
-  <h2 class="section-title" data-lang="en">Book a Free Initial Consultation</h2>
-  <p class="section-sub" data-lang="de">30 Minuten. Kein Verkaufsgespräch. Wir schauen gemeinsam, wo KI in Ihrem Betrieb den grössten Unterschied machen kann.</p>
-  <p class="section-sub" data-lang="en">30 minutes. No sales pitch. We look together at where AI can make the biggest difference in your business.</p>
+  <div class="contact-wrap">
+    <div class="contact-left">
+      <div class="eyebrow" data-de>Jetzt starten</div>
+      <div class="eyebrow" data-en>Get Started</div>
+      <h2 data-de>30 Minuten.<br/>Kein Verkaufsgespräch.</h2>
+      <h2 data-en>30 Minutes.<br/>No Sales Pitch.</h2>
+      <p data-de>Im Erstgespräch schauen wir gemeinsam, wo KI in Ihrem Betrieb den grössten Unterschied macht – und ob wir der richtige Partner dafür sind.</p>
+      <p data-en>In the initial consultation we look together at where AI makes the biggest difference in your business – and whether we are the right partner for it.</p>
+      <div class="contact-perks">
+        <div class="perk">
+          <span class="perk-icon">✅</span>
+          <span class="perk-text" data-de><strong>Kostenlos & unverbindlich</strong> – Sie entscheiden danach, ob Sie weitermachen möchten.</span>
+          <span class="perk-text" data-en><strong>Free & non-binding</strong> – you decide afterwards whether you want to continue.</span>
+        </div>
+        <div class="perk">
+          <span class="perk-icon">✅</span>
+          <span class="perk-text" data-de><strong>Konkrete Einschätzung</strong> – kein vages Versprechen, sondern ein realistischer Business Case.</span>
+          <span class="perk-text" data-en><strong>Concrete assessment</strong> – no vague promise, but a realistic business case.</span>
+        </div>
+        <div class="perk">
+          <span class="perk-icon">✅</span>
+          <span class="perk-text" data-de><strong>Direkt mit dem Experten</strong> – kein Sales-Team, kein Callcenter.</span>
+          <span class="perk-text" data-en><strong>Directly with the expert</strong> – no sales team, no call centre.</span>
+        </div>
+      </div>
+    </div>
 
-  <div class="contact-box">
-    <form action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" method="POST">
-      <div class="form-row">
-        <div class="form-group">
-          <label data-lang="de">Vorname *</label>
-          <label data-lang="en">First Name *</label>
-          <input type="text" name="first_name" required />
+    <div class="contact-form">
+      <div class="form-title" data-de>Gespräch anfragen</div>
+      <div class="form-title" data-en>Request a Consultation</div>
+      <form action="https://formspree.io/f/REPLACE_WITH_FORMSPREE_ID" method="POST">
+        <input type="hidden" name="_subject" value="Neue Anfrage – OpenClaw Consulting" />
+        <div class="form-row">
+          <div class="fg">
+            <label data-de>Vorname *</label>
+            <label data-en>First Name *</label>
+            <input type="text" name="first_name" required />
+          </div>
+          <div class="fg">
+            <label data-de>Nachname *</label>
+            <label data-en>Last Name *</label>
+            <input type="text" name="last_name" required />
+          </div>
         </div>
-        <div class="form-group">
-          <label data-lang="de">Nachname *</label>
-          <label data-lang="en">Last Name *</label>
-          <input type="text" name="last_name" required />
+        <div class="fg">
+          <label>E-Mail *</label>
+          <input type="email" name="email" required />
         </div>
-      </div>
-      <div class="form-group">
-        <label>E-Mail *</label>
-        <input type="email" name="email" required />
-      </div>
-      <div class="form-group">
-        <label data-lang="de">Unternehmen</label>
-        <label data-lang="en">Company</label>
-        <input type="text" name="company" />
-      </div>
-      <div class="form-group">
-        <label data-lang="de">Wonach suchen Sie?</label>
-        <label data-lang="en">What are you looking for?</label>
-        <select name="interest">
-          <option value="" data-lang="de">Bitte wählen…</option>
-          <option value="" data-lang="en">Please select…</option>
-          <option value="offers" data-lang="de">Angebotserstellung automatisieren</option>
-          <option value="offers" data-lang="en">Automate offer creation</option>
-          <option value="email" data-lang="de">E-Mail-Management</option>
-          <option value="email" data-lang="en">Email management</option>
-          <option value="content" data-lang="de">Content-Erstellung</option>
-          <option value="content" data-lang="en">Content creation</option>
-          <option value="process" data-lang="de">Interne Prozesse</option>
-          <option value="process" data-lang="en">Internal processes</option>
-          <option value="reporting" data-lang="de">Reporting & Analyse</option>
-          <option value="reporting" data-lang="en">Reporting & analysis</option>
-          <option value="other" data-lang="de">Anderes</option>
-          <option value="other" data-lang="en">Other</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label data-lang="de">Ihre Nachricht (optional)</label>
-        <label data-lang="en">Your message (optional)</label>
-        <textarea name="message"></textarea>
-      </div>
-      <button type="submit" class="btn-primary" style="width:100%;" data-lang="de">Gespräch anfragen →</button>
-      <button type="submit" class="btn-primary" style="width:100%;" data-lang="en">Request Consultation →</button>
-    </form>
+        <div class="fg">
+          <label data-de>Unternehmen</label>
+          <label data-en>Company</label>
+          <input type="text" name="company" />
+        </div>
+        <div class="fg">
+          <label data-de>Welches Thema interessiert Sie am meisten?</label>
+          <label data-en>Which topic interests you most?</label>
+          <select name="interest" id="interest-select">
+            <option value="offers" data-de>Angebote & Offerten automatisieren</option>
+            <option value="email" data-de>E-Mail-Management & Triage</option>
+            <option value="content" data-de>Content-Erstellung</option>
+            <option value="process" data-de>Interne Prozesse</option>
+            <option value="reporting" data-de>Reporting & Analysen</option>
+            <option value="documents" data-de>Dokumentensuche & Wissensmanagement</option>
+            <option value="other" data-de>Anderes / Bin noch nicht sicher</option>
+            <option value="offers" data-en style="display:none">Automate offers & proposals</option>
+            <option value="email" data-en style="display:none">Email management & triage</option>
+            <option value="content" data-en style="display:none">Content creation</option>
+            <option value="process" data-en style="display:none">Internal processes</option>
+            <option value="reporting" data-en style="display:none">Reporting & analytics</option>
+            <option value="documents" data-en style="display:none">Document search & knowledge management</option>
+            <option value="other" data-en style="display:none">Other / Not sure yet</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label data-de>Ihre Nachricht (optional)</label>
+          <label data-en>Your message (optional)</label>
+          <textarea name="message" placeholder=""></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          <span data-de>Gespräch anfragen →</span>
+          <span data-en>Request Consultation →</span>
+        </button>
+        <p class="form-note" data-de>Wir melden uns innerhalb von 24 Stunden.</p>
+        <p class="form-note" data-en>We will get back to you within 24 hours.</p>
+      </form>
+    </div>
   </div>
 </section>
 
-<!-- ── FOOTER ──────────────────────────────────────────── -->
+<!-- FOOTER -->
 <footer>
-  <span class="footer-logo">OpenClaw Consulting</span>
-  <span data-lang="de">© 2026 OpenClaw Consulting · Schweiz</span>
-  <span data-lang="en">© 2026 OpenClaw Consulting · Switzerland</span>
-  <div style="display:flex;gap:1.5rem;">
-    <a href="#" data-lang="de">Impressum</a>
-    <a href="#" data-lang="en">Legal Notice</a>
-    <a href="#" data-lang="de">Datenschutz</a>
-    <a href="#" data-lang="en">Privacy Policy</a>
+  <div class="logo">
+    <div class="logo-icon" style="width:28px;height:28px;font-size:.85rem;">🦞</div>
+    OpenClaw Consulting
+  </div>
+  <span data-de>© 2026 OpenClaw Consulting · Schweiz</span>
+  <span data-en>© 2026 OpenClaw Consulting · Switzerland</span>
+  <div class="footer-links">
+    <a href="#" data-de>Impressum</a>
+    <a href="#" data-en>Legal Notice</a>
+    <a href="#" data-de>Datenschutz</a>
+    <a href="#" data-en>Privacy Policy</a>
   </div>
 </footer>
 
 <script>
+  const DE_OPTIONS = ["Angebote & Offerten automatisieren","E-Mail-Management & Triage","Content-Erstellung","Interne Prozesse","Reporting & Analysen","Dokumentensuche & Wissensmanagement","Anderes / Bin noch nicht sicher"];
+  const EN_OPTIONS = ["Automate offers & proposals","Email management & triage","Content creation","Internal processes","Reporting & analytics","Document search & knowledge management","Other / Not sure yet"];
+
   function setLang(lang) {
-    document.body.classList.toggle('lang-en', lang === 'en');
-    document.querySelectorAll('.lang-switch button').forEach(b => {
-      b.classList.toggle('active', b.textContent === lang.toUpperCase());
+    document.body.classList.toggle('en', lang === 'en');
+    document.querySelectorAll('.lang-btns button').forEach(b => {
+      b.classList.toggle('on', b.textContent === lang.toUpperCase());
+    });
+    // Fix select options
+    const sel = document.getElementById('interest-select');
+    const opts = EN_OPTIONS;
+    Array.from(sel.options).forEach((opt, i) => {
+      opt.text = lang === 'en' ? EN_OPTIONS[i] : DE_OPTIONS[i];
     });
   }
 
@@ -685,10 +666,9 @@
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       const t = document.querySelector(a.getAttribute('href'));
-      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
     });
   });
 </script>
-
 </body>
 </html>
