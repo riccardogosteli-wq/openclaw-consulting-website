@@ -296,6 +296,21 @@
     .btn-submit:hover{background:var(--ink2)}
     .fnote{text-align:center;font-size:.75rem;color:var(--slate);margin-top:.65rem}
 
+    /* FOR WHOM */
+    .forwhom{padding:0 6vw 70px;margin-top:-20px}
+    .fw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+    @media(max-width:720px){.fw-grid{grid-template-columns:1fr}}
+    .fw-card{
+      background:var(--light);border:1.5px solid var(--border);border-radius:var(--r);
+      padding:1.5rem 1.6rem;display:flex;flex-direction:column;gap:.6rem
+    }
+    .fw-card:hover{border-color:var(--green);box-shadow:0 2px 12px rgba(18,168,120,.08)}
+    .fw-icon{font-size:1.7rem}
+    .fw-title{font-family:'Bricolage Grotesque',sans-serif;font-size:1rem;font-weight:700;color:var(--ink)}
+    .fw-desc{font-size:.85rem;color:var(--slate);line-height:1.6}
+    .fw-saves{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.2rem}
+    .fw-pill{font-size:.72rem;font-weight:600;background:var(--green3);color:var(--green2);padding:.18rem .6rem;border-radius:20px}
+
     /* FOOTER */
     footer{
       background:#080E0C;color:rgba(255,255,255,.4);
@@ -339,8 +354,8 @@
     <h1 class="l-de">Ihr Team soll<br/><em>denken</em>,<br/>nicht tippen.</h1>
     <h1 class="l-en">Let your team<br/><em>think</em>,<br/>not type.</h1>
 
-    <p class="hero-sub l-de">Wir automatisieren repetitive digitale Aufgaben – egal welche Tools Sie nutzen, egal in welcher Branche. Angebote, E-Mails, Berichte, interne Abläufe – und vieles mehr. Damit Ihr Team das tut, wofür Sie es wirklich brauchen.</p>
-    <p class="hero-sub l-en">We automate repetitive digital tasks – regardless of what tools you use or what industry you're in. Proposals, emails, reports, internal workflows – and much more. So your team does what you actually need them for.</p>
+    <p class="hero-sub l-de">Wir automatisieren repetitive digitale Aufgaben – für Unternehmen, Selbstständige und Freelancer. Angebote, E-Mails, Berichte, Buchhaltung, Recherche – und vieles mehr. Damit Sie sich auf das konzentrieren, was wirklich zählt.</p>
+    <p class="hero-sub l-en">We automate repetitive digital tasks – for businesses, freelancers, and self-employed professionals. Proposals, emails, reports, invoicing, research – and much more. So you can focus on what actually matters.</p>
 
     <div class="hero-btns">
       <a href="#contact" class="btn-ink l-de">Kostenloses Erstgespräch →</a>
@@ -446,6 +461,57 @@
 </div>
 
 <!-- USE CASES -->
+<!-- FOR WHOM -->
+<div class="forwhom">
+  <div class="fw-grid">
+    <div class="fw-card">
+      <div class="fw-icon">🏢</div>
+      <div class="fw-title l-de">KMU & Unternehmen</div>
+      <div class="fw-title l-en">SMEs & Companies</div>
+      <p class="fw-desc l-de">Repetitive Prozesse im Team automatisieren – von der Offerte bis zum Reporting. Mehr Output, weniger Overhead.</p>
+      <p class="fw-desc l-en">Automate repetitive team workflows – from proposals to reporting. More output, less overhead.</p>
+      <div class="fw-saves">
+        <span class="fw-pill l-de">Angebote & Offerten</span>
+        <span class="fw-pill l-en">Proposals & quotes</span>
+        <span class="fw-pill l-de">Reporting</span>
+        <span class="fw-pill l-en">Reporting</span>
+        <span class="fw-pill l-de">Interne Abläufe</span>
+        <span class="fw-pill l-en">Internal workflows</span>
+      </div>
+    </div>
+    <div class="fw-card">
+      <div class="fw-icon">💼</div>
+      <div class="fw-title l-de">Selbstständige & Freelancer</div>
+      <div class="fw-title l-en">Freelancers & Self-Employed</div>
+      <p class="fw-desc l-de">Als Einzelperson tragen Sie alles selbst. Wir nehmen Ihnen die Verwaltung ab – damit Sie billable bleiben.</p>
+      <p class="fw-desc l-en">As a solo professional, you do it all. We take admin off your plate – so you stay billable.</p>
+      <div class="fw-saves">
+        <span class="fw-pill l-de">Rechnungen & Buchhaltung</span>
+        <span class="fw-pill l-en">Invoicing & accounting</span>
+        <span class="fw-pill l-de">Kundenkorrespondenz</span>
+        <span class="fw-pill l-en">Client comms</span>
+        <span class="fw-pill l-de">Zeiterfassung</span>
+        <span class="fw-pill l-en">Time tracking</span>
+      </div>
+    </div>
+    <div class="fw-card">
+      <div class="fw-icon">🏠</div>
+      <div class="fw-title l-de">Privatpersonen</div>
+      <div class="fw-title l-en">Private Individuals</div>
+      <p class="fw-desc l-de">Automatisierungen sind nicht nur für Firmen. Auch im Alltag lassen sich Stunden pro Woche sparen.</p>
+      <p class="fw-desc l-en">Automation isn't just for businesses. Save hours every week in your personal life too.</p>
+      <div class="fw-saves">
+        <span class="fw-pill l-de">E-Mail-Management</span>
+        <span class="fw-pill l-en">Email management</span>
+        <span class="fw-pill l-de">Recherche & Planung</span>
+        <span class="fw-pill l-en">Research & planning</span>
+        <span class="fw-pill l-de">Terminverwaltung</span>
+        <span class="fw-pill l-en">Scheduling</span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <section class="usecases" id="usecases">
   <div class="ey l-de">Was wir lösen</div>
   <div class="ey l-en">What We Solve</div>
