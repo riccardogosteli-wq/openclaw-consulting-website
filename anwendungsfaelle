@@ -8,7 +8,7 @@
 
   <link rel="canonical" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
   <link rel="alternate" hreflang="de-CH" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
-  <link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
+  <link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/en/use-cases"/>
   <link rel="alternate" hreflang="x-default" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
 
   <meta property="og:type" content="article"/>
@@ -30,7 +30,7 @@
       "url": "https://openclaw-consulting.ch",
       "logo": "https://openclaw-consulting.ch/favicon.svg"
     },
-    "inLanguage": ["de-CH", "en"]
+    "inLanguage": "de-CH"
   }
   </script>
   <script type="application/ld+json">
@@ -61,7 +61,7 @@
       {
         "@type": "Question",
         "name": "Was kostet ein einzelner Use Case?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Einfache Automatisierungen starten ab CHF 1'500. Der genaue Preis hängt von der Komplexität und Integration in bestehende Tools ab." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Einfache Automatisierungen starten ab CHF 1'500. Der genaue Preis hängt von der Komplexität und Integration in bestehende Tools ab. Wir erstellen nach dem Erstgespräch ein fixes Angebot." }
       }
     ]
   }
@@ -90,21 +90,6 @@
     h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
     a{text-decoration:none;color:inherit}
 
-    /* LANG */
-    .l-en{display:none!important}
-    body.en .l-de{display:none!important}
-    body.en div.l-en{display:block!important}
-    body.en p.l-en{display:block!important}
-    body.en h1.l-en{display:block!important}
-    body.en h2.l-en{display:block!important}
-    body.en h3.l-en{display:block!important}
-    body.en li.l-en{display:list-item!important}
-    body.en span.l-en{display:inline!important}
-    body.en a.l-en{display:inline!important}
-    body.en strong.l-en{display:inline!important}
-    body.en .page-tag.l-en{display:inline-flex!important}
-    body.en .tag.l-en{display:inline-flex!important}
-
     /* NAV */
     nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:.9rem 2rem}
     .logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1rem;display:flex;align-items:center;gap:8px}
@@ -114,9 +99,6 @@
     .nav-links a:hover{color:var(--ink)}
     .nav-cta{background:var(--ink)!important;color:#fff!important;padding:.45rem 1rem;border-radius:8px;font-weight:600!important}
     .nav-cta:hover{background:var(--ink2)!important}
-    .lang-btns{display:flex;gap:3px}
-    .lang-btns button{font-size:.75rem;font-weight:600;padding:.3rem .6rem;border-radius:6px;border:1px solid var(--border);background:transparent;cursor:pointer;color:var(--slate)}
-    .lang-btns button.on{background:var(--ink);border-color:var(--ink);color:#fff}
     @media(max-width:720px){.nav-links{display:none}nav{padding:.9rem 1.2rem}}
 
     /* CONTENT */
@@ -133,6 +115,7 @@
     li{margin-bottom:.4rem}
     strong{color:var(--ink);font-weight:600}
 
+    /* USE CASE CARDS */
     .uc-card{border:1px solid var(--border);border-radius:var(--r);padding:1.75rem;margin:2rem 0;position:relative}
     .uc-num{position:absolute;top:-14px;left:1.5rem;background:var(--ink);color:#fff;font-family:'Bricolage Grotesque',sans-serif;font-size:.85rem;font-weight:700;padding:.2rem .75rem;border-radius:20px}
     .uc-card h2{margin:0 0 .5rem;font-size:1.2rem}
@@ -146,6 +129,7 @@
     .uc-box p{font-size:.88rem;margin:0;color:var(--slate)}
     @media(max-width:560px){.uc-grid{grid-template-columns:1fr}}
 
+    /* CTA */
     .cta-block{background:var(--green3);border:1px solid var(--border);border-radius:var(--r);padding:2rem;text-align:center;margin:3rem 0}
     .cta-block h2{margin:0 0 .5rem}
     .cta-block p{margin:0 0 1.25rem;color:var(--slate)}
@@ -153,10 +137,14 @@
     .btn:hover{background:var(--ink2)}
     .btn-outline{background:transparent;border:2px solid var(--ink);color:var(--ink);margin-left:.75rem}
     .btn-outline:hover{background:var(--ink);color:#fff}
+
+    /* FAQ */
     .faq-item{border-bottom:1px solid var(--border);padding:1rem 0}
     .faq-item:last-child{border-bottom:none}
     .faq-q{font-weight:600;color:var(--ink);margin-bottom:.4rem;font-size:.95rem}
     .faq-a{color:var(--slate);font-size:.9rem}
+
+    /* FOOTER */
     footer{background:var(--ink);color:rgba(255,255,255,.5);text-align:center;padding:2rem;font-size:.82rem;display:flex;flex-direction:column;align-items:center;gap:.6rem}
     .footer-logo{font-family:'Bricolage Grotesque',sans-serif;color:rgba(255,255,255,.7);font-size:.95rem;font-weight:700;display:flex;align-items:center;gap:7px}
     footer a{color:rgba(255,255,255,.4);transition:color .2s}
@@ -173,300 +161,219 @@
   </a>
   <div style="display:flex;align-items:center;gap:2rem">
     <ul class="nav-links">
-      <li><a href="/#usecases" class="l-de">Anwendungsfälle</a><a href="/#usecases" class="l-en">Use Cases</a></li>
-      <li><a href="/#how" class="l-de">Vorgehen</a><a href="/#how" class="l-en">How It Works</a></li>
-      <li><a href="/#why" class="l-de">Warum wir</a><a href="/#why" class="l-en">Why Us</a></li>
-      <li><a href="/#contact" class="nav-cta l-de">Kontakt</a><a href="/#contact" class="nav-cta l-en">Contact</a></li>
+      <li><a href="/#usecases">Anwendungsfälle</a></li>
+      <li><a href="/#how">Vorgehen</a></li>
+      <li><a href="/#why">Warum wir</a></li>
+      <li><a href="/#contact" class="nav-cta">Kontakt</a></li>
     </ul>
-    <div class="lang-btns">
-      <button class="on" onclick="setLang('de')">DE</button>
-      <button onclick="setLang('en')">EN</button>
-    </div>
+    <a href="/en/use-cases" style="font-size:.8rem;font-weight:600;color:var(--slate);border:1px solid var(--border);padding:.3rem .65rem;border-radius:6px;text-decoration:none">EN</a>
   </div>
 </nav>
 
 <div class="page-wrap">
 
   <div class="breadcrumb">
-    <a href="/">Home</a> &rsaquo; <span class="l-de">Anwendungsfälle</span><span class="l-en">Use Cases</span>
+    <a href="/">Home</a> &rsaquo; Anwendungsfälle
   </div>
 
-  <div class="page-tag l-de">🇨🇭 8 Use Cases · Swiss Made</div>
-  <div class="page-tag l-en">🇨🇭 8 Use Cases · Swiss Made</div>
+  <div class="page-tag">🇨🇭 8 Use Cases · Swiss Made</div>
 
-  <h1 class="l-de">8 KI-Automatisierungen, die Schweizer KMU sofort einsetzen können</h1>
-  <h1 class="l-en">8 AI Automations Swiss SMEs Can Use Right Now</h1>
+  <h1>8 KI-Automatisierungen, die Schweizer KMU sofort einsetzen können</h1>
 
-  <p class="intro l-de">Nicht jede Automatisierung lohnt sich – aber diese 8 schon. Sie basieren auf realen Projekten mit Schweizer Unternehmen, Agenturen und Freelancern. Jeder Use Case kommt mit konkreter Zeitersparnis und Hinweis, für wen er besonders passt.</p>
-  <p class="intro l-en">Not every automation is worth it – but these 8 are. They're based on real projects with Swiss companies, agencies and freelancers. Each use case includes concrete time savings and guidance on who it fits best.</p>
+  <p class="intro">Nicht jede Automatisierung lohnt sich – aber diese 8 schon. Sie basieren auf realen Projekten mit Schweizer Unternehmen, Agenturen und Freelancern. Jeder Use Case kommt mit konkreter Zeitersparnis und Hinweis, für wen er besonders passt.</p>
 
   <!-- UC 1 -->
   <div class="uc-card">
     <div class="uc-num">01</div>
-    <h2 class="l-de">E-Mail-Triage &amp; Antwortvorschläge</h2>
-    <h2 class="l-en">Email Triage &amp; Draft Replies</h2>
+    <h2>E-Mail-Triage &amp; Antwortvorschläge</h2>
     <div class="uc-meta">
-      <span class="tag tag-save l-de">⏱ ~1 Std. / Tag gespart</span>
-      <span class="tag tag-save l-en">⏱ ~1 hr / day saved</span>
-      <span class="tag tag-fit l-de">👤 Geschäftsführer, Vertrieb, Kundendienst</span>
-      <span class="tag tag-fit l-en">👤 Executives, Sales, Customer Service</span>
+      <span class="tag tag-save">⏱ ~1 Std. / Tag gespart</span>
+      <span class="tag tag-fit">👤 Geschäftsführer, Vertrieb, Kundendienst</span>
     </div>
     <div class="uc-grid">
       <div class="uc-box">
-        <div class="uc-box-label l-de">Problem</div>
-        <div class="uc-box-label l-en">Problem</div>
-        <p class="l-de">50–100 E-Mails täglich. Vieles ist irrelevant oder Routine. Dringendes geht unter. Antworten kosten Konzentration.</p>
-        <p class="l-en">50–100 emails daily. Much of it irrelevant or routine. Urgent items get buried. Replies cost focus and time.</p>
+        <div class="uc-box-label">Problem</div>
+        <p>50–100 E-Mails täglich. Vieles ist irrelevant oder Routine. Dringendes geht unter. Antworten kosten Konzentration.</p>
       </div>
       <div class="uc-box">
-        <div class="uc-box-label l-de">Lösung</div>
-        <div class="uc-box-label l-en">Solution</div>
-        <p class="l-de">KI klassifiziert automatisch nach Priorität, filtert Noise heraus und schlägt passende Antwortformulierungen vor – direkt im Postfach.</p>
-        <p class="l-en">AI automatically classifies by priority, filters out noise and suggests appropriate reply drafts – directly in your inbox.</p>
+        <div class="uc-box-label">Lösung</div>
+        <p>KI klassifiziert automatisch nach Priorität, filtert Noise heraus und schlägt passende Antwortformulierungen vor – direkt im Postfach.</p>
       </div>
     </div>
-    <p style="margin-top:1rem" class="l-de">Unterstützte Tools: <strong>Outlook, Gmail, Apple Mail</strong>. Kein Wechsel nötig.</p>
-    <p style="margin-top:1rem" class="l-en">Supported tools: <strong>Outlook, Gmail, Apple Mail</strong>. No switching required.</p>
+    <p style="margin-top:1rem">Unterstützte Tools: <strong>Outlook, Gmail, Apple Mail</strong>. Kein Wechsel nötig.</p>
   </div>
 
   <!-- UC 2 -->
   <div class="uc-card">
     <div class="uc-num">02</div>
-    <h2 class="l-de">Angebote &amp; Offerten automatisch erstellen</h2>
-    <h2 class="l-en">Automated Proposals &amp; Quotes</h2>
+    <h2>Angebote &amp; Offerten automatisch erstellen</h2>
     <div class="uc-meta">
-      <span class="tag tag-save l-de">⏱ 3–5 Std. / Woche gespart</span>
-      <span class="tag tag-save l-en">⏱ 3–5 hrs / week saved</span>
-      <span class="tag tag-fit l-de">👤 Agenturen, Berater, Freelancer</span>
-      <span class="tag tag-fit l-en">👤 Agencies, Consultants, Freelancers</span>
+      <span class="tag tag-save">⏱ 3–5 Std. / Woche gespart</span>
+      <span class="tag tag-fit">👤 Agenturen, Berater, Freelancer</span>
     </div>
     <div class="uc-grid">
       <div class="uc-box">
-        <div class="uc-box-label l-de">Problem</div>
-        <div class="uc-box-label l-en">Problem</div>
-        <p class="l-de">Jedes Angebot hat dieselbe Grundstruktur – und kostet trotzdem 1–2 Stunden. Texte werden immer wieder neu geschrieben.</p>
-        <p class="l-en">Every proposal has the same basic structure – yet takes 1–2 hours each time. Texts are rewritten over and over.</p>
+        <div class="uc-box-label">Problem</div>
+        <p>Jedes Angebot hat dieselbe Grundstruktur – und kostet trotzdem 1–2 Stunden. Texte werden immer wieder neu geschrieben.</p>
       </div>
       <div class="uc-box">
-        <div class="uc-box-label l-de">Lösung</div>
-        <div class="uc-box-label l-en">Solution</div>
-        <p class="l-de">Kurze Briefing-Eingabe → vollständiges, CI-konformes Angebot mit Kalkulation, Leistungsbeschrieb und Preisen. In Minuten statt Stunden.</p>
-        <p class="l-en">Short briefing input → complete, brand-compliant proposal with pricing, scope description and deliverables. Minutes instead of hours.</p>
+        <div class="uc-box-label">Lösung</div>
+        <p>Kurze Briefing-Eingabe → vollständiges, CI-konformes Angebot mit Kalkulation, Leistungsbeschrieb und Preisen. In Minuten statt Stunden.</p>
       </div>
     </div>
-    <p style="margin-top:1rem" class="l-de">Output: <strong>PDF, Word oder direkt per E-Mail</strong>. Eigenes Corporate Design.</p>
-    <p style="margin-top:1rem" class="l-en">Output: <strong>PDF, Word or sent directly by email</strong>. Your own corporate design.</p>
+    <p style="margin-top:1rem">Output: <strong>PDF, Word oder direkt per E-Mail</strong>. Eigenes Corporate Design.</p>
   </div>
 
   <!-- UC 3 -->
   <div class="uc-card">
     <div class="uc-num">03</div>
-    <h2 class="l-de">Wochenreporting automatisieren</h2>
-    <h2 class="l-en">Automated Weekly Reporting</h2>
+    <h2>Wochenreporting automatisieren</h2>
     <div class="uc-meta">
-      <span class="tag tag-save l-de">⏱ 2–4 Std. / Woche gespart</span>
-      <span class="tag tag-save l-en">⏱ 2–4 hrs / week saved</span>
-      <span class="tag tag-fit l-de">👤 Projektleiter, Teams mit Reporting-Pflicht</span>
-      <span class="tag tag-fit l-en">👤 Project managers, teams with reporting obligations</span>
+      <span class="tag tag-save">⏱ 2–4 Std. / Woche gespart</span>
+      <span class="tag tag-fit">👤 Projektleiter, Teams mit Reporting-Pflicht</span>
     </div>
     <div class="uc-grid">
       <div class="uc-box">
-        <div class="uc-box-label l-de">Problem</div>
-        <div class="uc-box-label l-en">Problem</div>
-        <p class="l-de">Daten müssen aus JIRA, Toggl, Google Sheets oder anderen Tools manuell zusammengesucht und in einen Report kopiert werden.</p>
-        <p class="l-en">Data has to be manually gathered from JIRA, Toggl, Google Sheets or other tools and copy-pasted into a report.</p>
+        <div class="uc-box-label">Problem</div>
+        <p>Daten müssen aus JIRA, Toggl, Google Sheets oder anderen Tools manuell zusammengesucht und in einen Report kopiert werden.</p>
       </div>
       <div class="uc-box">
-        <div class="uc-box-label l-de">Lösung</div>
-        <div class="uc-box-label l-en">Solution</div>
-        <p class="l-de">Automatischer Datenpull aus allen relevanten Quellen → fertiger Report als PDF oder Google Slides – jeden Montag um 8 Uhr im Postfach.</p>
-        <p class="l-en">Automatic data pull from all relevant sources → finished report as PDF or Google Slides – every Monday at 8am in your inbox.</p>
+        <div class="uc-box-label">Lösung</div>
+        <p>Automatischer Datenpull aus allen relevanten Quellen → fertiger Report als PDF oder Google Slides – jeden Montag um 8 Uhr im Postfach.</p>
       </div>
     </div>
-    <p style="margin-top:1rem" class="l-de">Quellen: <strong>JIRA, Toggl, Harvest, Asana, Google Sheets, Excel</strong> – alle kombinierbar.</p>
-    <p style="margin-top:1rem" class="l-en">Sources: <strong>JIRA, Toggl, Harvest, Asana, Google Sheets, Excel</strong> – all combinable.</p>
+    <p style="margin-top:1rem">Quellen: <strong>JIRA, Toggl, Harvest, Asana, Google Sheets, Excel</strong> – alle kombinierbar.</p>
   </div>
 
   <!-- UC 4 -->
   <div class="uc-card">
     <div class="uc-num">04</div>
-    <h2 class="l-de">Rechnungen &amp; Buchhaltungsvorbereitung</h2>
-    <h2 class="l-en">Invoicing &amp; Bookkeeping Preparation</h2>
+    <h2>Rechnungen &amp; Buchhaltungsvorbereitung</h2>
     <div class="uc-meta">
-      <span class="tag tag-save l-de">⏱ 2–3 Std. / Monat gespart</span>
-      <span class="tag tag-save l-en">⏱ 2–3 hrs / month saved</span>
-      <span class="tag tag-fit l-de">👤 Freelancer, Agenturen, Dienstleister</span>
-      <span class="tag tag-fit l-en">👤 Freelancers, agencies, service providers</span>
+      <span class="tag tag-save">⏱ 2–3 Std. / Monat gespart</span>
+      <span class="tag tag-fit">👤 Freelancer, Agenturen, Dienstleister</span>
     </div>
     <div class="uc-grid">
       <div class="uc-box">
-        <div class="uc-box-label l-de">Problem</div>
-        <div class="uc-box-label l-en">Problem</div>
-        <p class="l-de">Stunden aus Toggl oder Harvest exportieren, Rechnung in Word/Excel erstellen, als PDF speichern, per E-Mail versenden – alles von Hand.</p>
-        <p class="l-en">Export hours from Toggl or Harvest, create invoice in Word/Excel, save as PDF, send by email – all done manually.</p>
+        <div class="uc-box-label">Problem</div>
+        <p>Stunden aus Toggl oder Harvest exportieren, Rechnung in Word/Excel erstellen, als PDF speichern, per E-Mail versenden – alles von Hand.</p>
       </div>
       <div class="uc-box">
-        <div class="uc-box-label l-de">Lösung</div>
-        <div class="uc-box-label l-en">Solution</div>
-        <p class="l-de">Toggl-Erfassung → Rechnungs-PDF mit Ihrem Logo → automatisch an den Kunden. Monatsende ohne manuelle Arbeit.</p>
-        <p class="l-en">Toggl tracking → invoice PDF with your logo → automatically sent to the client. Month-end without manual work.</p>
+        <div class="uc-box-label">Lösung</div>
+        <p>Toggl-Erfassung → Rechnungs-PDF mit Ihrem Logo → automatisch an den Kunden. Monatsende ohne manuelle Arbeit.</p>
       </div>
     </div>
-    <p style="margin-top:1rem" class="l-de">Kompatibel mit: <strong>Toggl, Harvest, MWST-konformen PDF-Vorlagen</strong>.</p>
-    <p style="margin-top:1rem" class="l-en">Compatible with: <strong>Toggl, Harvest, VAT-compliant PDF templates</strong>.</p>
+    <p style="margin-top:1rem">Kompatibel mit: <strong>Toggl, Harvest, MWST-konformen PDF-Vorlagen</strong>.</p>
   </div>
 
   <!-- UC 5 -->
   <div class="uc-card">
     <div class="uc-num">05</div>
-    <h2 class="l-de">Kundenkorrespondenz &amp; Follow-ups</h2>
-    <h2 class="l-en">Client Correspondence &amp; Follow-ups</h2>
+    <h2>Kundenkorrespondenz &amp; Follow-ups</h2>
     <div class="uc-meta">
-      <span class="tag tag-save l-de">⏱ 1–2 Std. / Woche gespart</span>
-      <span class="tag tag-save l-en">⏱ 1–2 hrs / week saved</span>
-      <span class="tag tag-fit l-de">👤 Vertrieb, Berater, Kundenbetreuung</span>
-      <span class="tag tag-fit l-en">👤 Sales, consultants, account management</span>
+      <span class="tag tag-save">⏱ 1–2 Std. / Woche gespart</span>
+      <span class="tag tag-fit">👤 Vertrieb, Berater, Kundenbetreuung</span>
     </div>
     <div class="uc-grid">
       <div class="uc-box">
-        <div class="uc-box-label l-de">Problem</div>
-        <div class="uc-box-label l-en">Problem</div>
-        <p class="l-de">Follow-up-E-Mails nach Meetings gehen vergessen. Angebote werden nicht nachgefasst. Leads schlafen ein.</p>
-        <p class="l-en">Follow-up emails after meetings get forgotten. Proposals go without follow-through. Leads go cold.</p>
+        <div class="uc-box-label">Problem</div>
+        <p>Follow-up-E-Mails nach Meetings gehen vergessen. Angebote werden nicht nachgefasst. Leads schlafen ein.</p>
       </div>
       <div class="uc-box">
-        <div class="uc-box-label l-de">Lösung</div>
-        <div class="uc-box-label l-en">Solution</div>
-        <p class="l-de">Automatische Erinnerungen + fertige E-Mail-Entwürfe basierend auf dem letzten Kontakt. Kein Lead geht mehr verloren.</p>
-        <p class="l-en">Automatic reminders + ready-made email drafts based on the last contact. No lead gets lost again.</p>
+        <div class="uc-box-label">Lösung</div>
+        <p>Automatische Erinnerungen + fertige E-Mail-Entwürfe basierend auf dem letzten Kontakt. Kein Lead geht mehr verloren.</p>
       </div>
     </div>
-    <p style="margin-top:1rem" class="l-de">Integration mit: <strong>CRM, Outlook, Gmail, Kalender</strong>.</p>
-    <p style="margin-top:1rem" class="l-en">Integration with: <strong>CRM, Outlook, Gmail, Calendar</strong>.</p>
+    <p style="margin-top:1rem">Integration mit: <strong>CRM, Outlook, Gmail, Kalender</strong>.</p>
   </div>
 
   <!-- UC 6 -->
   <div class="uc-card">
     <div class="uc-num">06</div>
-    <h2 class="l-de">Dokumenten-Recherche &amp; Zusammenfassungen</h2>
-    <h2 class="l-en">Document Research &amp; Summaries</h2>
+    <h2>Dokumenten-Recherche &amp; Zusammenfassungen</h2>
     <div class="uc-meta">
-      <span class="tag tag-save l-de">⏱ 3–6 Std. / Woche gespart</span>
-      <span class="tag tag-save l-en">⏱ 3–6 hrs / week saved</span>
-      <span class="tag tag-fit l-de">👤 Juristen, Berater, Management</span>
-      <span class="tag tag-fit l-en">👤 Lawyers, consultants, management</span>
+      <span class="tag tag-save">⏱ 3–6 Std. / Woche gespart</span>
+      <span class="tag tag-fit">👤 Juristen, Berater, Management</span>
     </div>
     <div class="uc-grid">
       <div class="uc-box">
-        <div class="uc-box-label l-de">Problem</div>
-        <div class="uc-box-label l-en">Problem</div>
-        <p class="l-de">Lange PDFs, Verträge und Reports lesen kostet Stunden. Relevante Informationen sind schwer auffindbar.</p>
-        <p class="l-en">Reading long PDFs, contracts and reports takes hours. Relevant information is hard to find.</p>
+        <div class="uc-box-label">Problem</div>
+        <p>Lange PDFs, Verträge und Reports lesen kostet Stunden. Relevante Informationen sind schwer auffindbar.</p>
       </div>
       <div class="uc-box">
-        <div class="uc-box-label l-de">Lösung</div>
-        <div class="uc-box-label l-en">Solution</div>
-        <p class="l-de">KI fasst Dokumente zusammen, beantwortet Fragen dazu und extrahiert relevante Klauseln oder Zahlen – in Sekunden.</p>
-        <p class="l-en">AI summarises documents, answers questions about them and extracts relevant clauses or figures – in seconds.</p>
+        <div class="uc-box-label">Lösung</div>
+        <p>KI fasst Dokumente zusammen, beantwortet Fragen dazu und extrahiert relevante Klauseln oder Zahlen – in Sekunden.</p>
       </div>
     </div>
-    <p style="margin-top:1rem" class="l-de">Unterstützt: <strong>PDF, Word, Excel, E-Mail-Anhänge</strong>. Komplett lokal möglich (kein Cloud-Upload).</p>
-    <p style="margin-top:1rem" class="l-en">Supports: <strong>PDF, Word, Excel, email attachments</strong>. Fully local possible (no cloud upload).</p>
+    <p style="margin-top:1rem">Unterstützt: <strong>PDF, Word, Excel, E-Mail-Anhänge</strong>. Komplett lokal möglich (kein Cloud-Upload).</p>
   </div>
 
   <!-- UC 7 -->
   <div class="uc-card">
     <div class="uc-num">07</div>
-    <h2 class="l-de">Social-Media-Content auf Knopfdruck</h2>
-    <h2 class="l-en">Social Media Content at the Push of a Button</h2>
+    <h2>Social-Media-Content auf Knopfdruck</h2>
     <div class="uc-meta">
-      <span class="tag tag-save l-de">⏱ 2–4 Std. / Woche gespart</span>
-      <span class="tag tag-save l-en">⏱ 2–4 hrs / week saved</span>
-      <span class="tag tag-fit l-de">👤 Marketing, Freelancer mit Online-Präsenz</span>
-      <span class="tag tag-fit l-en">👤 Marketing, freelancers with an online presence</span>
+      <span class="tag tag-save">⏱ 2–4 Std. / Woche gespart</span>
+      <span class="tag tag-fit">👤 Marketing, Freelancer mit Online-Präsenz</span>
     </div>
     <div class="uc-grid">
       <div class="uc-box">
-        <div class="uc-box-label l-de">Problem</div>
-        <div class="uc-box-label l-en">Problem</div>
-        <p class="l-de">Regelmässige Posts auf LinkedIn oder Instagram brauchen Zeit. Immer wieder neue Texte im richtigen Ton zu finden ist aufwendig.</p>
-        <p class="l-en">Regular posts on LinkedIn or Instagram take time. Coming up with new texts in the right tone over and over is exhausting.</p>
+        <div class="uc-box-label">Problem</div>
+        <p>Regelmässige Posts auf LinkedIn oder Instagram brauchen Zeit. Immer wieder neue Texte im richtigen Ton zu finden ist aufwendig.</p>
       </div>
       <div class="uc-box">
-        <div class="uc-box-label l-de">Lösung</div>
-        <div class="uc-box-label l-en">Solution</div>
-        <p class="l-de">Thema eingeben → fertige Posts in Ihrem Tone of Voice für LinkedIn, Instagram oder Newsletter. Direkt publishbar oder zur Freigabe.</p>
-        <p class="l-en">Enter a topic → finished posts in your tone of voice for LinkedIn, Instagram or newsletters. Ready to publish or for review.</p>
+        <div class="uc-box-label">Lösung</div>
+        <p>Thema eingeben → fertige Posts in Ihrem Tone of Voice für LinkedIn, Instagram oder Newsletter. Direkt publishbar oder zur Freigabe.</p>
       </div>
     </div>
-    <p style="margin-top:1rem" class="l-de">Kanäle: <strong>LinkedIn, Instagram, Newsletter (Mailchimp, Brevo)</strong>.</p>
-    <p style="margin-top:1rem" class="l-en">Channels: <strong>LinkedIn, Instagram, Newsletter (Mailchimp, Brevo)</strong>.</p>
+    <p style="margin-top:1rem">Kanäle: <strong>LinkedIn, Instagram, Newsletter (Mailchimp, Brevo)</strong>.</p>
   </div>
 
   <!-- UC 8 -->
   <div class="uc-card">
     <div class="uc-num">08</div>
-    <h2 class="l-de">Interne Prozesse &amp; Onboarding</h2>
-    <h2 class="l-en">Internal Processes &amp; Onboarding</h2>
+    <h2>Interne Prozesse &amp; Onboarding</h2>
     <div class="uc-meta">
-      <span class="tag tag-save l-de">⏱ 5–10 Std. / neues Teammitglied gespart</span>
-      <span class="tag tag-save l-en">⏱ 5–10 hrs / new team member saved</span>
-      <span class="tag tag-fit l-de">👤 HR, Teamleiter, Ops</span>
-      <span class="tag tag-fit l-en">👤 HR, team leads, ops</span>
+      <span class="tag tag-save">⏱ 5–10 Std. / neues Teammitglied gespart</span>
+      <span class="tag tag-fit">👤 HR, Teamleiter, Ops</span>
     </div>
     <div class="uc-grid">
       <div class="uc-box">
-        <div class="uc-box-label l-de">Problem</div>
-        <div class="uc-box-label l-en">Problem</div>
-        <p class="l-de">Ein neues Teammitglied kostet 1–2 Wochen manuelle Einführung. Checklisten, Zugänge, Dokumente – alles wird jedes Mal neu organisiert.</p>
-        <p class="l-en">A new team member costs 1–2 weeks of manual onboarding. Checklists, accesses, documents – everything gets organised from scratch each time.</p>
+        <div class="uc-box-label">Problem</div>
+        <p>Ein neues Teammitglied kostet 1–2 Wochen manuelle Einführung. Checklisten, Zugänge, Dokumente – alles wird jedes Mal neu organisiert.</p>
       </div>
       <div class="uc-box">
-        <div class="uc-box-label l-de">Lösung</div>
-        <div class="uc-box-label l-en">Solution</div>
-        <p class="l-de">Automatisierte Onboarding-Sequenz: Zugänge anlegen, Checklisten versenden, Dokumente zuweisen – alles ohne manuellen Aufwand.</p>
-        <p class="l-en">Automated onboarding sequence: set up accesses, send checklists, assign documents – all without manual effort.</p>
+        <div class="uc-box-label">Lösung</div>
+        <p>Automatisierte Onboarding-Sequenz: Zugänge anlegen, Checklisten versenden, Dokumente zuweisen – alles ohne manuellen Aufwand.</p>
       </div>
     </div>
-    <p style="margin-top:1rem" class="l-de">Kompatibel mit: <strong>Google Workspace, Microsoft 365, Notion, Confluence</strong>.</p>
-    <p style="margin-top:1rem" class="l-en">Compatible with: <strong>Google Workspace, Microsoft 365, Notion, Confluence</strong>.</p>
+    <p style="margin-top:1rem">Kompatibel mit: <strong>Google Workspace, Microsoft 365, Notion, Confluence</strong>.</p>
   </div>
 
-  <!-- CTA -->
+  <!-- Self-assessment CTA -->
   <div class="cta-block">
-    <h2 class="l-de">Welcher Anwendungsfall passt zu Ihnen?</h2>
-    <h2 class="l-en">Which Use Case Fits You?</h2>
-    <p class="l-de">In 30 Minuten analysieren wir gemeinsam, welcher Use Case in Ihrem Unternehmen den grössten Hebel hat – kostenlos, ohne Verkaufspitch.</p>
-    <p class="l-en">In 30 minutes we'll analyse together which use case has the biggest impact in your business – free, no sales pitch.</p>
-    <a href="/#contact" class="btn l-de">Kostenloses Erstgespräch</a>
-    <a href="/#contact" class="btn l-en">Free initial consultation</a>
-    <a href="/ki-automatisierung-schweiz" class="btn btn-outline l-de">Was ist KI-Automatisierung? →</a>
-    <a href="/ki-automatisierung-schweiz" class="btn btn-outline l-en">What is AI automation? →</a>
+    <h2>Welcher Anwendungsfall passt zu Ihnen?</h2>
+    <p>In 30 Minuten analysieren wir gemeinsam, welcher Use Case in Ihrem Unternehmen den grössten Hebel hat – kostenlos, ohne Verkaufspitch.</p>
+    <a href="/#contact" class="btn">Kostenloses Erstgespräch</a>
+    <a href="/ki-automatisierung-schweiz" class="btn btn-outline">Was ist KI-Automatisierung? →</a>
   </div>
 
   <!-- FAQ -->
-  <h2 class="l-de">Häufig gestellte Fragen</h2>
-  <h2 class="l-en">Frequently Asked Questions</h2>
+  <h2>Häufig gestellte Fragen</h2>
   <div class="faq-item">
-    <div class="faq-q l-de">Können wir mehrere Anwendungsfälle kombinieren?</div>
-    <div class="faq-q l-en">Can we combine multiple use cases?</div>
-    <div class="faq-a l-de">Ja. Viele Kunden starten mit einem Use Case und erweitern schrittweise. Die Automatisierungen lassen sich kombinieren und aufeinander aufbauen.</div>
-    <div class="faq-a l-en">Yes. Many clients start with one use case and expand gradually. Automations can be combined and built on top of each other.</div>
+    <div class="faq-q">Können wir mehrere Anwendungsfälle kombinieren?</div>
+    <div class="faq-a">Ja. Viele Kunden starten mit einem Use Case und erweitern schrittweise. Die Automatisierungen lassen sich kombinieren und aufeinander aufbauen.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q l-de">Wie schnell ist der erste Use Case live?</div>
-    <div class="faq-q l-en">How quickly can the first use case go live?</div>
-    <div class="faq-a l-de">Einfache Anwendungsfälle wie E-Mail-Triage oder Rechnungsstellung sind typischerweise in 2–4 Wochen live.</div>
-    <div class="faq-a l-en">Simple use cases like email triage or invoicing are typically live within 2–4 weeks.</div>
+    <div class="faq-q">Wie schnell ist der erste Use Case live?</div>
+    <div class="faq-a">Einfache Anwendungsfälle wie E-Mail-Triage oder Rechnungsstellung sind typischerweise in 2–4 Wochen live.</div>
   </div>
   <div class="faq-item">
-    <div class="faq-q l-de">Was kostet ein einzelner Use Case?</div>
-    <div class="faq-q l-en">What does a single use case cost?</div>
-    <div class="faq-a l-de">Einfache Automatisierungen starten ab CHF 1'500. Der genaue Preis hängt von der Komplexität und Integration in bestehende Tools ab. Wir erstellen nach dem Erstgespräch ein fixes Angebot.</div>
-    <div class="faq-a l-en">Simple automations start from CHF 1,500. The exact price depends on complexity and integration with existing tools. We provide a fixed quote after the initial consultation.</div>
+    <div class="faq-q">Was kostet ein einzelner Use Case?</div>
+    <div class="faq-a">Einfache Automatisierungen starten ab CHF 1'500. Der genaue Preis hängt von der Komplexität und Integration in bestehende Tools ab. Wir erstellen nach dem Erstgespräch ein fixes Angebot.</div>
   </div>
 
-</div>
+</div><!-- end page-wrap -->
 
 <footer>
   <div class="footer-logo"><div class="logo-mark" style="width:26px;height:26px;font-size:.8rem;border-radius:6px">🦞</div> OpenClaw Consulting</div>
@@ -477,13 +384,5 @@
   </div>
 </footer>
 
-<script>
-function setLang(lang) {
-  document.body.classList.toggle('en', lang === 'en');
-  document.querySelectorAll('.lang-btns button').forEach(b => {
-    b.classList.toggle('on', b.textContent === lang.toUpperCase());
-  });
-}
-</script>
 </body>
 </html>

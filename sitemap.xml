@@ -16,6 +16,7 @@
   <url>
     <loc>https://openclaw-consulting.ch/ki-automatisierung-schweiz</loc>
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://openclaw-consulting.ch/ki-automatisierung-schweiz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/en/ai-automation-switzerland"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://openclaw-consulting.ch/ki-automatisierung-schweiz"/>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -23,12 +24,33 @@
   </url>
 
   <url>
+    <loc>https://openclaw-consulting.ch/en/ai-automation-switzerland</loc>
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://openclaw-consulting.ch/ki-automatisierung-schweiz"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/en/ai-automation-switzerland"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://openclaw-consulting.ch/ki-automatisierung-schweiz"/>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://openclaw-consulting.ch/anwendungsfaelle</loc>
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/en/use-cases"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://openclaw-consulting.ch/en/use-cases</loc>
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/en/use-cases"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
+    <lastmod>2026-03-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>AI Automation in Switzerland – A Guide for SMEs &amp; Freelancers | OpenClaw Consulting</title>
+  <meta name="description" content="AI automation is no longer just for large corporations. Swiss SMEs save hours every day – without an IT department, without coding skills. Guide for getting started."/>
+
+  <link rel="canonical" href="https://openclaw-consulting.ch/en/ai-automation-switzerland"/>
+  <link rel="alternate" hreflang="de-CH" href="https://openclaw-consulting.ch/ki-automatisierung-schweiz"/>
+  <link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/en/ai-automation-switzerland"/>
+  <link rel="alternate" hreflang="x-default" href="https://openclaw-consulting.ch/ki-automatisierung-schweiz"/>
+
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="https://openclaw-consulting.ch/en/ai-automation-switzerland"/>
+  <meta property="og:title" content="AI Automation in Switzerland – A Guide for SMEs &amp; Freelancers | OpenClaw Consulting"/>
+  <meta property="og:description" content="AI automation is no longer just for large corporations. Swiss SMEs save hours every day – without an IT department, without coding skills."/>
+  <meta property="og:locale" content="en_CH"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "AI Automation in Switzerland – A Guide for SMEs & Freelancers",
+    "description": "AI automation is no longer just for large corporations. Swiss SMEs save hours every day – without an IT department, without coding skills.",
+    "url": "https://openclaw-consulting.ch/en/ai-automation-switzerland",
+    "publisher": {
+      "@type": "Organization",
+      "name": "OpenClaw Consulting",
+      "url": "https://openclaw-consulting.ch",
+      "logo": "https://openclaw-consulting.ch/favicon.svg"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://openclaw-consulting.ch/" },
+      { "@type": "ListItem", "position": 2, "name": "AI Automation Switzerland", "item": "https://openclaw-consulting.ch/en/ai-automation-switzerland" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I need technical knowledge for AI automation?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. You describe the process, we build the solution. No code, no IT knowledge required." }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does an AI automation project take?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Simple automations go live in 2–4 weeks. More complex projects with multiple processes take 6–12 weeks." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does AI automation work with our existing tools?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Outlook, SAP, Google Workspace, custom systems – we integrate into existing infrastructure without switching tools." }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to our data?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Your data stays in Switzerland. We build privacy-compliant solutions in accordance with the nDSG and GDPR. No vendor lock-in." }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bricolage+Grotesque:wght@700;800&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root{--ink:#0F1714;--ink2:#1E3329;--green:#12A878;--green2:#0E8F67;--green3:#E6F7F2;--slate:#4B5563;--light:#F7FAF9;--white:#FFFFFF;--border:#E4EDE9;--r:14px}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
+    a{text-decoration:none;color:inherit}
+    nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:.9rem 2rem;max-width:1100px;margin:0 auto}
+    .logo{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1rem;display:flex;align-items:center;gap:8px}
+    .logo-mark{width:30px;height:30px;background:var(--ink);color:#fff;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+    .nav-links{display:flex;gap:1.6rem;list-style:none}
+    .nav-links a{font-size:.85rem;font-weight:500;color:var(--slate);transition:color .15s}
+    .nav-links a:hover{color:var(--ink)}
+    .nav-cta{background:var(--ink)!important;color:#fff!important;padding:.45rem 1rem;border-radius:8px;font-weight:600!important}
+    .lang-switch{font-size:.8rem;font-weight:600;color:var(--slate);border:1px solid var(--border);padding:.3rem .65rem;border-radius:6px}
+    .lang-switch:hover{color:var(--ink);border-color:var(--ink)}
+    @media(max-width:720px){.nav-links{display:none}nav{padding:.9rem 1.2rem}}
+    .page-wrap{max-width:780px;margin:0 auto;padding:3rem 1.5rem 5rem}
+    .breadcrumb{font-size:.8rem;color:var(--slate);margin-bottom:1.5rem}
+    .breadcrumb a{color:var(--green);text-decoration:underline}
+    .page-tag{display:inline-flex;align-items:center;gap:6px;background:var(--green3);color:var(--green2);font-size:.78rem;font-weight:600;padding:.3rem .75rem;border-radius:20px;margin-bottom:1.25rem}
+    h1{font-size:clamp(1.8rem,4vw,2.6rem);color:var(--ink);margin-bottom:1.25rem}
+    .intro{font-size:1.05rem;color:var(--slate);margin-bottom:2.5rem;max-width:640px}
+    h2{font-size:1.35rem;color:var(--ink);margin:2.5rem 0 .75rem}
+    h3{font-size:1.05rem;color:var(--ink2);margin:1.5rem 0 .5rem;font-family:'Inter',sans-serif;font-weight:600}
+    p{color:var(--slate);margin-bottom:1rem}
+    ul,ol{color:var(--slate);padding-left:1.4rem;margin-bottom:1rem}
+    li{margin-bottom:.4rem}
+    strong{color:var(--ink);font-weight:600}
+    .card{background:var(--light);border:1px solid var(--border);border-radius:var(--r);padding:1.5rem;margin:1.5rem 0}
+    .card h3{margin-top:0;color:var(--ink)}
+    .compare-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.9rem}
+    .compare-table th{background:var(--ink);color:#fff;padding:.65rem 1rem;text-align:left;font-weight:600}
+    .compare-table td{padding:.6rem 1rem;border-bottom:1px solid var(--border);color:var(--slate)}
+    .compare-table tr:nth-child(even) td{background:var(--light)}
+    .tick{color:var(--green);font-weight:700}
+    .cross{color:#DC2626}
+    .checklist{list-style:none;padding:0}
+    .checklist li{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:.6rem}
+    .checklist li::before{content:"✓";color:var(--green);font-weight:700;flex-shrink:0;margin-top:.1rem}
+    .roi-box{background:var(--ink);color:#fff;border-radius:var(--r);padding:1.5rem 2rem;margin:1.5rem 0}
+    .roi-box h3{color:#fff;margin:0 0 .75rem;font-family:'Bricolage Grotesque',sans-serif}
+    .roi-box p{color:rgba(255,255,255,.75);margin:.35rem 0}
+    .roi-total{font-size:1.5rem;font-weight:700;color:var(--green);margin-top:.75rem}
+    .cta-block{background:var(--green3);border:1px solid var(--border);border-radius:var(--r);padding:2rem;text-align:center;margin:3rem 0}
+    .cta-block h2{margin:0 0 .5rem}
+    .cta-block p{margin:0 0 1.25rem;color:var(--slate)}
+    .btn{display:inline-block;background:var(--ink);color:#fff;padding:.75rem 1.75rem;border-radius:10px;font-weight:600;font-size:.95rem;transition:background .15s}
+    .btn:hover{background:var(--ink2)}
+    .btn-outline{background:transparent;border:2px solid var(--ink);color:var(--ink);margin-left:.75rem}
+    .btn-outline:hover{background:var(--ink);color:#fff}
+    .faq-item{border-bottom:1px solid var(--border);padding:1rem 0}
+    .faq-item:last-child{border-bottom:none}
+    .faq-q{font-weight:600;color:var(--ink);margin-bottom:.4rem;font-size:.95rem}
+    .faq-a{color:var(--slate);font-size:.9rem}
+    footer{background:var(--ink);color:rgba(255,255,255,.5);text-align:center;padding:2rem;font-size:.82rem;display:flex;flex-direction:column;align-items:center;gap:.6rem}
+    .footer-logo{font-family:'Bricolage Grotesque',sans-serif;color:rgba(255,255,255,.7);font-size:.95rem;font-weight:700;display:flex;align-items:center;gap:7px}
+    footer a{color:rgba(255,255,255,.4);transition:color .2s}
+    footer a:hover{color:var(--green)}
+    .flinks{display:flex;gap:1.5rem}
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo"><div class="logo-mark">🦞</div>OpenClaw Consulting</a>
+  <div style="display:flex;align-items:center;gap:2rem">
+    <ul class="nav-links">
+      <li><a href="/#usecases">Use Cases</a></li>
+      <li><a href="/#how">How It Works</a></li>
+      <li><a href="/#why">Why Us</a></li>
+      <li><a href="/#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <a href="/ki-automatisierung-schweiz" class="lang-switch">DE</a>
+  </div>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="breadcrumb"><a href="/">Home</a> &rsaquo; AI Automation Switzerland</div>
+
+  <div class="page-tag">🇨🇭 Swiss Made · AI Automation</div>
+
+  <h1>AI Automation in Switzerland – A Guide for SMEs &amp; Freelancers</h1>
+
+  <p class="intro">AI automation is no longer just for large corporations. Swiss SMEs, agencies and freelancers are saving hours every day – without an IT department, without coding skills. This guide explains what's worth automating, what it costs, and how to get started.</p>
+
+  <h2>What Is AI Automation? (and what it isn't)</h2>
+  <p>AI automation means: digital tasks that a person currently handles manually are taken over by an AI system. This goes beyond macros or simple scripts – AI understands context, recognises patterns and can handle unstructured data like emails, PDFs and forms.</p>
+  <p><strong>Typical examples:</strong></p>
+  <ul>
+    <li>Classify, prioritise emails and generate draft replies</li>
+    <li>Generate proposals from briefing notes</li>
+    <li>Automatically compile weekly reports from multiple tools</li>
+    <li>Create and send invoices (e.g. from Toggl time tracking)</li>
+    <li>Summarise documents and PDFs</li>
+    <li>Automate internal processes like onboarding or data maintenance</li>
+  </ul>
+  <p><strong>What AI automation is not:</strong> a magic wand for unclear processes. The task needs to be describable – then it can be automated.</p>
+
+  <h2>Which Processes Are Worth Automating?</h2>
+  <p>Not every process is a good candidate. These three rules help you decide:</p>
+  <div class="card">
+    <h3>Rule 1 – Does the process repeat daily or weekly?</h3>
+    <p>The more often a process occurs, the greater the leverage. Processing emails: daily. Annual report: once a year – probably not worth it.</p>
+  </div>
+  <div class="card">
+    <h3>Rule 2 – Does it cost more than 2 hours per week per person?</h3>
+    <p>Under 2 hours rarely makes sense. Between 2–10 hours is the sweet spot for automations with a clear ROI.</p>
+  </div>
+  <div class="card">
+    <h3>Rule 3 – Are there clearly defined inputs and outputs?</h3>
+    <p>Input: email arrives. Output: classified + draft reply. The clearer the pattern, the easier the automation.</p>
+  </div>
+  <p><strong>10 typical candidates in Swiss SMEs:</strong></p>
+  <ul class="checklist">
+    <li>Email triage and draft replies</li>
+    <li>Creating proposals and quotes</li>
+    <li>Reporting (weekly/monthly)</li>
+    <li>Invoicing and bookkeeping preparation</li>
+    <li>Research and summaries</li>
+    <li>Scheduling and calendar management</li>
+    <li>CRM data maintenance</li>
+    <li>Data transfer between tools (e.g. JIRA → Sheets)</li>
+    <li>Social media content creation</li>
+    <li>Onboarding processes and checklists</li>
+  </ul>
+
+  <h2>AI Automation vs. Traditional Software – The Difference</h2>
+  <table class="compare-table">
+    <thead><tr><th>Criterion</th><th>Traditional Software / Macros</th><th>AI Automation</th></tr></thead>
+    <tbody>
+      <tr><td>Handles structured data</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+      <tr><td>Handles emails, PDFs, free text</td><td class="cross">✗</td><td class="tick">✓</td></tr>
+      <tr><td>Understands context and meaning</td><td class="cross">✗</td><td class="tick">✓</td></tr>
+      <tr><td>Works with variable inputs</td><td class="cross">✗</td><td class="tick">✓</td></tr>
+      <tr><td>No coding needed for variants</td><td class="cross">✗</td><td class="tick">✓</td></tr>
+      <tr><td>Cheaper for simple, stable processes</td><td class="tick">✓</td><td class="cross">–</td></tr>
+    </tbody>
+  </table>
+  <p>Rule of thumb: if the process is always identical and just moves numbers, a macro is enough. As soon as language, documents or variability come into play, you need AI.</p>
+
+  <h2>What Does AI Automation Cost in Switzerland?</h2>
+  <p>Costs depend on complexity and scope. Typical ranges:</p>
+  <ul>
+    <li><strong>Single automation (e.g. email triage):</strong> CHF 1,500–4,000 one-time</li>
+    <li><strong>Combination of 3–5 processes:</strong> CHF 5,000–15,000</li>
+    <li><strong>Ongoing support / subscription:</strong> CHF 300–800/month</li>
+  </ul>
+  <div class="roi-box">
+    <h3>ROI Example Calculation</h3>
+    <p>3 employees each save 5 hours per week</p>
+    <p>Internal hourly rate: CHF 80/h</p>
+    <p>Savings: 3 × 5h × 48 weeks × CHF 80</p>
+    <div class="roi-total">= CHF 57,600 / year</div>
+    <p style="margin-top:.5rem;font-size:.85rem">At project costs of CHF 8,000, ROI is reached after ~7 weeks.</p>
+  </div>
+
+  <h2>Common Mistakes When Getting Started</h2>
+  <ul>
+    <li><strong>Starting too big:</strong> Trying to automate everything at once leads to paralysis. Better: pick one use case, go live fast, build trust.</li>
+    <li><strong>Wrong tool for the job:</strong> Not every AI solution fits every process. An analysis before building saves time and money.</li>
+    <li><strong>No internal ownership:</strong> Automations need a responsible person internally – not for the code, but for maintenance and development.</li>
+    <li><strong>Ignoring data protection:</strong> Swiss companies are subject to the nDSG. We build exclusively privacy-compliant solutions – no vendor lock-in, no uncontrolled data sharing.</li>
+  </ul>
+
+  <h2>How OpenClaw Consulting Works</h2>
+  <p>Our process is simple and transparent:</p>
+  <ol>
+    <li><strong>Initial consultation (free, 30 min.):</strong> We listen to which processes are costing you time.</li>
+    <li><strong>Analysis &amp; prioritisation:</strong> We show what's really worth it – with effort and savings estimates.</li>
+    <li><strong>Build &amp; test:</strong> We build the automation in your environment, with your tools.</li>
+    <li><strong>Launch &amp; handover:</strong> You operate the solution without technical knowledge. We remain available for support.</li>
+  </ol>
+  <p>You typically see first results within <strong>2–4 weeks</strong>.</p>
+
+  <div class="cta-block">
+    <h2>Ready for Your First Automation Use Case?</h2>
+    <p>Free initial consultation – 30 minutes, no vendor pitch, just honest assessment.</p>
+    <a href="/#contact" class="btn">Get in touch</a>
+    <a href="/en/use-cases" class="btn btn-outline">See concrete examples →</a>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <div class="faq-q">Do I need technical knowledge?</div>
+    <div class="faq-a">No. You describe the process, we build the solution. No code, no IT knowledge required.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How long does a project take?</div>
+    <div class="faq-a">Simple automations go live in 2–4 weeks. More complex projects with multiple processes take 6–12 weeks.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Does it work with our existing tools?</div>
+    <div class="faq-a">Yes. Outlook, SAP, Google Workspace, custom systems – we integrate into existing infrastructure without switching tools.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">What happens to our data?</div>
+    <div class="faq-a">Your data stays in Switzerland. We build privacy-compliant solutions in accordance with the nDSG and GDPR. No vendor lock-in.</div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo"><div class="logo-mark" style="width:26px;height:26px;font-size:.8rem;border-radius:6px">🦞</div> OpenClaw Consulting</div>
+  <span>© 2026 OpenClaw Consulting · Switzerland</span>
+  <div class="flinks">
+    <a href="/impressum.html">Impressum</a>
+    <a href="/datenschutz.html">Datenschutz</a>
+  </div>
+</footer>
+
+</body>
+</html>
