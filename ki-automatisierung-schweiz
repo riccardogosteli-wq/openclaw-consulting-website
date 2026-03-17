@@ -103,7 +103,7 @@
     .nav-links a{font-size:.85rem;font-weight:500;color:var(--slate);transition:color .15s}
     .nav-links a:hover{color:var(--ink)}
     .nav-cta{background:var(--ink)!important;color:#fff!important;padding:.45rem 1rem;border-radius:8px;font-weight:600!important}
-    .nav-cta:hover{background:var(--ink2)!important}
+    .nav-cta:hover{background:var(--ink2)!important}.nav-r{display:flex;align-items:center;gap:2rem}.lang-btns{display:flex;gap:3px}.lang-btns a{font-size:.75rem;font-weight:600;padding:.3rem .6rem;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--slate);text-decoration:none}.lang-btns a:hover{color:var(--ink);border-color:var(--ink)}
     @media(max-width:720px){.nav-links{display:none}nav{padding:.9rem 1.2rem}}
 
     /* CONTENT */
@@ -173,14 +173,17 @@
     <div class="logo-mark">🦞</div>
     OpenClaw Consulting
   </a>
-  <div style="display:flex;align-items:center;gap:2rem">
+  <div class="nav-r">
     <ul class="nav-links">
       <li><a href="/#usecases">Anwendungsfälle</a></li>
       <li><a href="/#how">Vorgehen</a></li>
       <li><a href="/#why">Warum wir</a></li>
       <li><a href="/#contact" class="nav-cta">Kontakt</a></li>
     </ul>
-    <a href="/ai-automation-switzerland" style="font-size:.8rem;font-weight:600;color:var(--slate);border:1px solid var(--border);padding:.3rem .65rem;border-radius:6px;text-decoration:none">EN</a>
+    <div class="lang-btns">
+      <a href="/ki-automatisierung-schweiz" style="background:var(--ink);border-color:var(--ink);color:#fff">DE</a>
+      <a href="/ai-automation-switzerland">EN</a>
+    </div>
   </div>
 </nav>
 
