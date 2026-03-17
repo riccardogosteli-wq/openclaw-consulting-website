@@ -80,8 +80,8 @@
     :root{--ink:#0F1714;--ink2:#1E3329;--green:#12A878;--green2:#0E8F67;--green3:#E6F7F2;--slate:#4B5563;--light:#F7FAF9;--white:#FFFFFF;--border:#E4EDE9;--r:14px}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
-    body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased}
-    h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.15}
+    body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+    h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.1}
     a{text-decoration:none;color:inherit}
     nav{
       position:sticky;top:0;z-index:100;
