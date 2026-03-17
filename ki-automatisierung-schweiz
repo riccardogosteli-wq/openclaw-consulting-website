@@ -186,10 +186,7 @@
 <body>
 
 <nav>
-  <a href="/" class="logo">
-    <div class="logo-mark">🦞</div>
-    OpenClaw Consulting
-  </a>
+  <a href="/" class="logo"><div class="logo-mark">🦞</div>OpenClaw Consulting</a>
   <div class="nav-r">
     <ul class="nav-links">
       <li><a href="/#usecases">Anwendungsfälle</a></li>
