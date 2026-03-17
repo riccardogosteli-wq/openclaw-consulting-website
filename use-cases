@@ -6,13 +6,13 @@
   <title>AI Automation: 8 Concrete Use Cases for Swiss SMEs | OpenClaw Consulting</title>
   <meta name="description" content="From email triage to reporting: 8 real use cases showing how Swiss SMEs save hours daily with AI automation. With ROI estimates."/>
 
-  <link rel="canonical" href="https://openclaw-consulting.ch/en/use-cases"/>
+  <link rel="canonical" href="https://openclaw-consulting.ch/use-cases"/>
   <link rel="alternate" hreflang="de-CH" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
-  <link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/en/use-cases"/>
+  <link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/use-cases"/>
   <link rel="alternate" hreflang="x-default" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
 
   <meta property="og:type" content="article"/>
-  <meta property="og:url" content="https://openclaw-consulting.ch/en/use-cases"/>
+  <meta property="og:url" content="https://openclaw-consulting.ch/use-cases"/>
   <meta property="og:title" content="AI Automation: 8 Concrete Use Cases for Swiss SMEs | OpenClaw Consulting"/>
   <meta property="og:description" content="From email triage to reporting: 8 real use cases showing how Swiss SMEs save hours daily with AI automation. With ROI estimates."/>
   <meta property="og:locale" content="en_CH"/>
@@ -23,7 +23,7 @@
     "@type": "Article",
     "headline": "AI Automation: 8 Concrete Use Cases for Swiss SMEs",
     "description": "From email triage to reporting: 8 real use cases showing how Swiss SMEs save hours daily with AI automation.",
-    "url": "https://openclaw-consulting.ch/en/use-cases",
+    "url": "https://openclaw-consulting.ch/use-cases",
     "publisher": {
       "@type": "Organization",
       "name": "OpenClaw Consulting",
@@ -39,7 +39,7 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://openclaw-consulting.ch/" },
-      { "@type": "ListItem", "position": 2, "name": "Use Cases", "item": "https://openclaw-consulting.ch/en/use-cases" }
+      { "@type": "ListItem", "position": 2, "name": "Use Cases", "item": "https://openclaw-consulting.ch/use-cases" }
     ]
   }
   </script>
@@ -316,7 +316,7 @@
     <h2>Which Use Case Fits You?</h2>
     <p>In 30 minutes we'll analyse together which use case has the biggest impact in your business – free, no sales pitch.</p>
     <a href="/#contact" class="btn">Free initial consultation</a>
-    <a href="/en/ai-automation-switzerland" class="btn btn-outline">What is AI automation? →</a>
+    <a href="/ai-automation-switzerland" class="btn btn-outline">What is AI automation? →</a>
   </div>
 
   <h2>Frequently Asked Questions</h2>

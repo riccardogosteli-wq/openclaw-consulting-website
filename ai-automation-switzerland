@@ -6,13 +6,13 @@
   <title>AI Automation in Switzerland – A Guide for SMEs &amp; Freelancers | OpenClaw Consulting</title>
   <meta name="description" content="AI automation is no longer just for large corporations. Swiss SMEs save hours every day – without an IT department, without coding skills. Guide for getting started."/>
 
-  <link rel="canonical" href="https://openclaw-consulting.ch/en/ai-automation-switzerland"/>
+  <link rel="canonical" href="https://openclaw-consulting.ch/ai-automation-switzerland"/>
   <link rel="alternate" hreflang="de-CH" href="https://openclaw-consulting.ch/ki-automatisierung-schweiz"/>
-  <link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/en/ai-automation-switzerland"/>
+  <link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/ai-automation-switzerland"/>
   <link rel="alternate" hreflang="x-default" href="https://openclaw-consulting.ch/ki-automatisierung-schweiz"/>
 
   <meta property="og:type" content="article"/>
-  <meta property="og:url" content="https://openclaw-consulting.ch/en/ai-automation-switzerland"/>
+  <meta property="og:url" content="https://openclaw-consulting.ch/ai-automation-switzerland"/>
   <meta property="og:title" content="AI Automation in Switzerland – A Guide for SMEs &amp; Freelancers | OpenClaw Consulting"/>
   <meta property="og:description" content="AI automation is no longer just for large corporations. Swiss SMEs save hours every day – without an IT department, without coding skills."/>
   <meta property="og:locale" content="en_CH"/>
@@ -23,7 +23,7 @@
     "@type": "Article",
     "headline": "AI Automation in Switzerland – A Guide for SMEs & Freelancers",
     "description": "AI automation is no longer just for large corporations. Swiss SMEs save hours every day – without an IT department, without coding skills.",
-    "url": "https://openclaw-consulting.ch/en/ai-automation-switzerland",
+    "url": "https://openclaw-consulting.ch/ai-automation-switzerland",
     "publisher": {
       "@type": "Organization",
       "name": "OpenClaw Consulting",
@@ -39,7 +39,7 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://openclaw-consulting.ch/" },
-      { "@type": "ListItem", "position": 2, "name": "AI Automation Switzerland", "item": "https://openclaw-consulting.ch/en/ai-automation-switzerland" }
+      { "@type": "ListItem", "position": 2, "name": "AI Automation Switzerland", "item": "https://openclaw-consulting.ch/ai-automation-switzerland" }
     ]
   }
   </script>
@@ -256,7 +256,7 @@
     <h2>Ready for Your First Automation Use Case?</h2>
     <p>Free initial consultation – 30 minutes, no vendor pitch, just honest assessment.</p>
     <a href="/#contact" class="btn">Get in touch</a>
-    <a href="/en/use-cases" class="btn btn-outline">See concrete examples →</a>
+    <a href="/use-cases" class="btn btn-outline">See concrete examples →</a>
   </div>
 
   <h2>Frequently Asked Questions</h2>

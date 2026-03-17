@@ -8,7 +8,7 @@
 
   <link rel="canonical" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
   <link rel="alternate" hreflang="de-CH" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
-  <link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/en/use-cases"/>
+  <link rel="alternate" hreflang="en" href="https://openclaw-consulting.ch/use-cases"/>
   <link rel="alternate" hreflang="x-default" href="https://openclaw-consulting.ch/anwendungsfaelle"/>
 
   <meta property="og:type" content="article"/>
@@ -166,7 +166,7 @@
       <li><a href="/#why">Warum wir</a></li>
       <li><a href="/#contact" class="nav-cta">Kontakt</a></li>
     </ul>
-    <a href="/en/use-cases" style="font-size:.8rem;font-weight:600;color:var(--slate);border:1px solid var(--border);padding:.3rem .65rem;border-radius:6px;text-decoration:none">EN</a>
+    <a href="/use-cases" style="font-size:.8rem;font-weight:600;color:var(--slate);border:1px solid var(--border);padding:.3rem .65rem;border-radius:6px;text-decoration:none">EN</a>
   </div>
 </nav>
 
