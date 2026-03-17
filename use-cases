@@ -85,8 +85,8 @@
     .nav-links a{font-size:.85rem;font-weight:500;color:var(--slate);transition:color .15s}
     .nav-links a:hover{color:var(--ink)}
     .nav-cta{background:var(--ink)!important;color:#fff!important;padding:.45rem 1rem;border-radius:8px;font-weight:600!important}
-    .lang-switch{font-size:.8rem;font-weight:600;color:var(--slate);border:1px solid var(--border);padding:.3rem .65rem;border-radius:6px}
-    .lang-switch:hover{color:var(--ink);border-color:var(--ink)}
+    .nav-r{display:flex;align-items:center;gap:2rem}.lang-btns{display:flex;gap:3px}.lang-btns a{font-size:.75rem;font-weight:600;padding:.3rem .6rem;border-radius:6px;border:1px solid var(--border);background:transparent;color:var(--slate);text-decoration:none}.lang-btns a:hover{color:var(--ink);border-color:var(--ink)}
+    
     @media(max-width:720px){.nav-links{display:none}nav{padding:.9rem 1.2rem}}
     .page-wrap{max-width:780px;margin:0 auto;padding:3rem 1.5rem 5rem}
     .breadcrumb{font-size:.8rem;color:var(--slate);margin-bottom:1.5rem}
@@ -129,18 +129,21 @@
 </head>
 <body>
 
-<nav><div class="nav-inner">
+<nav>
   <a href="/" class="logo"><div class="logo-mark">🦞</div>OpenClaw Consulting</a>
-  <div style="display:flex;align-items:center;gap:2rem">
+  <div class="nav-r">
     <ul class="nav-links">
       <li><a href="/#usecases">Use Cases</a></li>
       <li><a href="/#how">How It Works</a></li>
       <li><a href="/#why">Why Us</a></li>
       <li><a href="/#contact" class="nav-cta">Contact</a></li>
     </ul>
-    <a href="/anwendungsfaelle" class="lang-switch">DE</a>
+    <div class="lang-btns">
+      <a href="/anwendungsfaelle">DE</a>
+      <a href="/use-cases" style="background:var(--ink);border-color:var(--ink);color:#fff">EN</a>
+    </div>
   </div>
-</div></nav>
+</nav>
 
 <div class="page-wrap">
 
