@@ -129,7 +129,7 @@
 </head>
 <body>
 
-<nav>
+<nav><div class="nav-inner">
   <a href="/" class="logo"><div class="logo-mark">🦞</div>OpenClaw Consulting</a>
   <div style="display:flex;align-items:center;gap:2rem">
     <ul class="nav-links">
@@ -140,7 +140,7 @@
     </ul>
     <a href="/anwendungsfaelle" class="lang-switch">DE</a>
   </div>
-</nav>
+</div></nav>
 
 <div class="page-wrap">
 
