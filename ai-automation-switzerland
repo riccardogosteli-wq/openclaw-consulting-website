@@ -93,7 +93,7 @@
     .logo{display:flex;align-items:center;gap:9px;font-family:'Bricolage Grotesque',sans-serif;font-size:1.1rem;font-weight:700;color:var(--ink)}
     .logo-mark{width:32px;height:32px;border-radius:8px;background:var(--ink);display:flex;align-items:center;justify-content:center;font-size:.9rem}
     .nav-r{display:flex;align-items:center;gap:2rem}
-    .nav-links{display:flex;gap:1.6rem;list-style:none}
+    .nav-links{display:flex;gap:1.6rem;list-style:none}.nav-links li{margin-bottom:0}
     .nav-links a{font-size:.85rem;font-weight:500;color:var(--slate);transition:color .15s}
     .nav-links a:hover{color:var(--ink)}
     .nav-cta{
