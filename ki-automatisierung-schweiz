@@ -116,14 +116,11 @@
     }
     .nav-cta:hover{background:var(--ink2) !important}
     .lang-btns{display:flex;gap:3px}
-    .lang-btns a{
-      display:inline-flex;align-items:center;
+    .lang-btns button{
       background:none;border:1.5px solid var(--border);color:var(--slate);
-      padding:.22rem .55rem;border-radius:6px;font-size:.73rem;font-weight:600;
-      text-decoration:none;cursor:pointer;transition:all .15s
+      padding:.22rem .55rem;border-radius:6px;font-size:.73rem;font-weight:600;cursor:pointer;transition:all .15s
     }
-    .lang-btns a.on{background:var(--ink);border-color:var(--ink);color:#fff}
-    .lang-btns a:hover{color:var(--ink);border-color:var(--ink)}
+    .lang-btns button.on{background:var(--ink);border-color:var(--ink);color:#fff}
     @media(max-width:720px){.nav-links{display:none}nav{padding:.9rem 1.2rem}}
 
     /* CONTENT */
@@ -201,8 +198,8 @@
       <li><a href="/#contact" class="nav-cta">Kontakt</a></li>
     </ul>
     <div class="lang-btns">
-      <a href="/ki-automatisierung-schweiz" class="on">DE</a>
-      <a href="/ai-automation-switzerland">EN</a>
+      <button onclick="location.href='/ki-automatisierung-schweiz'" class="on">DE</button>
+      <button onclick="location.href='/ai-automation-switzerland'">EN</button>
     </div>
   </div>
 </nav>
