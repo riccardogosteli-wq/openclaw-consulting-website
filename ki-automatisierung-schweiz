@@ -102,7 +102,7 @@
     .nav-links{display:flex;gap:1.6rem;list-style:none}
     .nav-links a{font-size:.85rem;font-weight:500;color:var(--slate);transition:color .15s}
     .nav-links a:hover{color:var(--ink)}
-    .nav-cta{background:var(--ink)!important;color:#fff!important;padding:.45rem 1rem;border-radius:8px;font-weight:600!important}
+    .nav-cta{background:var(--ink);color:#fff!important;padding:.42rem 1.1rem;border-radius:8px;font-weight:600!important;font-size:.83rem!important;transition:background .15s}
     .nav-cta:hover{background:var(--ink2)!important}.nav-r{display:flex;align-items:center;gap:2rem}.lang-btns{display:flex;gap:3px;align-items:center}.lang-btns a{display:inline-flex;align-items:center;background:none;border:1.5px solid var(--border);color:var(--slate);padding:.22rem .55rem;border-radius:6px;font-size:.73rem;font-weight:600;text-decoration:none;transition:all .15s;cursor:pointer}.lang-btns a.on{background:var(--ink);border-color:var(--ink);color:#fff}.lang-btns a:hover{color:var(--ink);border-color:var(--ink)}
     @media(max-width:720px){.nav-links{display:none}nav{padding:.9rem 1.2rem}}
 
