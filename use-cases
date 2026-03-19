@@ -16,6 +16,11 @@
   <meta property="og:title" content="AI Automation: 8 Concrete Use Cases for Swiss SMEs | OpenClaw Consulting"/>
   <meta property="og:description" content="From email triage to reporting: 8 real use cases showing how Swiss SMEs save hours daily with AI automation. With ROI estimates."/>
   <meta property="og:locale" content="en_CH"/>
+  <meta property="og:image" content="https://openclaw-consulting.ch/og-image.svg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://openclaw-consulting.ch/og-image.svg"/>
 
   <script type="application/ld+json">
   {

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0F1714"/>
+  <rect x="0" y="0" width="8" height="630" fill="#2EC89A"/>
+  <text x="80" y="180" font-family="system-ui,sans-serif" font-size="52" font-weight="700" fill="white">OpenClaw Consulting</text>
+  <text x="80" y="260" font-family="system-ui,sans-serif" font-size="34" fill="#9CA3AF">KI-Automatisierung für Schweizer KMU</text>
+  <text x="80" y="340" font-family="system-ui,sans-serif" font-size="28" fill="#2EC89A">E-Mails · Offerten · Reporting — automatisiert in 2–4 Wochen</text>
+  <text x="80" y="420" font-family="system-ui,sans-serif" font-size="24" fill="#6B7280">&#127464;&#127469; Swiss Made · Datensouverän · ROI zuerst</text>
+  <text x="80" y="560" font-family="system-ui,sans-serif" font-size="20" fill="#4B5563">openclaw-consulting.ch</text>
+</svg>

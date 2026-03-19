@@ -16,6 +16,11 @@
   <meta property="og:title" content="KI-Automatisierung: 8 konkrete Anwendungsfälle für Schweizer KMU | OpenClaw Consulting"/>
   <meta property="og:description" content="Von E-Mail-Triage bis Reporting: 8 reale Anwendungsfälle, wie Schweizer KMU mit KI-Automatisierung täglich Stunden sparen. Mit ROI-Schätzungen."/>
   <meta property="og:locale" content="de_CH"/>
+  <meta property="og:image" content="https://openclaw-consulting.ch/og-image.svg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="https://openclaw-consulting.ch/og-image.svg"/>
 
   <script type="application/ld+json">
   {
