@@ -170,6 +170,14 @@
       transition:background .15s;
     }
     .nav-cta:hover{background:var(--ink2) !important}
+    .nav-hosting{
+      display:inline-flex;align-items:center;gap:.35rem;
+      background:var(--green3);color:var(--green2) !important;border:1.5px solid var(--green);
+      padding:.38rem 1rem;border-radius:8px;font-weight:600 !important;font-size:.83rem !important;
+      transition:all .15s;white-space:nowrap;text-decoration:none;
+    }
+    .nav-hosting:hover{background:var(--green);color:#fff !important}
+    .nav-hosting .hosting-arrow{font-size:.8rem;opacity:.75}
     .lang-btns{display:flex;gap:3px}
     .lang-btns button{
       background:none;border:1.5px solid var(--border);color:var(--slate);
@@ -389,6 +397,7 @@
       <li><a href="#usecases" class="l-de">Anwendungsfälle</a><a href="#usecases" class="l-en">Use Cases</a></li>
       <li><a href="#how" class="l-de">Vorgehen</a><a href="#how" class="l-en">How It Works</a></li>
       <li><a href="#why" class="l-de">Warum wir</a><a href="#why" class="l-en">Why Us</a></li>
+      <li><a href="https://hosting.openclaw-consulting.ch" class="nav-hosting l-de" target="_blank" rel="noopener">Hosting <span class="hosting-arrow">↗</span></a><a href="https://hosting.openclaw-consulting.ch" class="nav-hosting l-en" target="_blank" rel="noopener">Hosting <span class="hosting-arrow">↗</span></a></li>
       <li><a href="#contact" class="nav-cta l-de">Kontakt</a><a href="#contact" class="nav-cta l-en">Contact</a></li>
     </ul>
     <div class="lang-btns">
@@ -894,6 +903,22 @@
 </section>
 
 <!-- FOOTER -->
+<div style="background:var(--green3);border-top:1px solid #b2dfd4;padding:1.25rem 6vw;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+  <div>
+    <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:.92rem;font-weight:700;color:var(--ink);margin-bottom:.2rem">
+      <span class="l-de">🚀 Lieber selbst starten?</span>
+      <span class="l-en">🚀 Prefer to start yourself?</span>
+    </div>
+    <div style="font-size:.82rem;color:var(--slate)">
+      <span class="l-de">Ihr eigener KI-Assistent auf Schweizer Server — in 30 Minuten live. Ab CHF 15/Mo.</span>
+      <span class="l-en">Your own AI assistant on a Swiss server — live in 30 minutes. From CHF 15/mo.</span>
+    </div>
+  </div>
+  <a href="https://hosting.openclaw-consulting.ch" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;background:var(--green);color:#fff;padding:.55rem 1.25rem;border-radius:8px;font-weight:600;font-size:.86rem;white-space:nowrap;transition:background .15s" onmouseover="this.style.background='var(--green2)'" onmouseout="this.style.background='var(--green)'">
+    <span class="l-de">OpenClaw Hosting ansehen ↗</span>
+    <span class="l-en">See OpenClaw Hosting ↗</span>
+  </a>
+</div>
 <footer>
   <div class="footer-logo"><div class="logo-mark" style="width:26px;height:26px;font-size:.8rem;border-radius:6px">🦞</div> OpenClaw Consulting</div>
   <span class="l-de">© 2026 OpenClaw Consulting · Schweiz</span>
@@ -903,6 +928,8 @@
     <a href="ai-automation-switzerland" class="l-en">AI Automation</a>
     <a href="anwendungsfaelle" class="l-de">Anwendungsfälle</a>
     <a href="use-cases" class="l-en">Use Cases</a>
+    <a href="https://hosting.openclaw-consulting.ch" target="_blank" rel="noopener" class="l-de">Hosting</a>
+    <a href="https://hosting.openclaw-consulting.ch" target="_blank" rel="noopener" class="l-en">Hosting</a>
     <a href="mailto:support@openclaw-consulting.ch">support@openclaw-consulting.ch</a>
     <a href="impressum.html" class="l-de">Impressum</a><a href="impressum.html" class="l-en">Legal</a>
     <a href="datenschutz.html" class="l-de">Datenschutz</a><a href="datenschutz.html" class="l-en">Privacy</a>
