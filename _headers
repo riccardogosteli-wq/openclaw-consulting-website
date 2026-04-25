@@ -9,11 +9,23 @@
 /anwendungsfaelle
   Content-Type: text/html; charset=utf-8
 
+/anwendungsfaelle/
+  Content-Type: text/html; charset=utf-8
+
 /use-cases
+  Content-Type: text/html; charset=utf-8
+
+/use-cases/
   Content-Type: text/html; charset=utf-8
 
 /ki-automatisierung-schweiz
   Content-Type: text/html; charset=utf-8
 
+/ki-automatisierung-schweiz/
+  Content-Type: text/html; charset=utf-8
+
 /ai-automation-switzerland
+  Content-Type: text/html; charset=utf-8
+
+/ai-automation-switzerland/
   Content-Type: text/html; charset=utf-8

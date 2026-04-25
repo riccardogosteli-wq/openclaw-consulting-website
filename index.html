@@ -180,6 +180,11 @@
     .nav-links{display:flex;gap:1.6rem;list-style:none}
     .nav-links a{font-size:.85rem;font-weight:500;color:var(--slate);transition:color .15s}
     .nav-links a:hover{color:var(--ink)}
+    .mobile-menu-btn{display:none;background:var(--ink);color:#fff;border:0;border-radius:8px;padding:.45rem .75rem;font-size:.9rem;font-weight:700;cursor:pointer}
+    .mobile-menu{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 16px 40px rgba(15,23,20,.1);padding:1rem 6vw;z-index:99}
+    .mobile-menu a{display:block;padding:.8rem 0;border-bottom:1px solid var(--border);font-size:.95rem;font-weight:650;color:var(--ink)}
+    .mobile-menu a:last-child{border-bottom:0}
+    body.mobile-nav-open .mobile-menu{display:block}
     .nav-cta{
       display:inline-flex;align-items:center;
       background:var(--ink);color:var(--white) !important;
@@ -201,7 +206,7 @@
       padding:.22rem .55rem;border-radius:6px;font-size:.73rem;font-weight:600;cursor:pointer;transition:all .15s
     }
     .lang-btns button.on{background:var(--ink);border-color:var(--ink);color:#fff}
-    @media(max-width:720px){.nav-links{display:none}}
+    @media(max-width:720px){.nav-links{display:none}.mobile-menu-btn{display:inline-flex}.nav-r{gap:.7rem}nav{position:sticky}}
 
     /* HERO */
     .hero{
@@ -411,7 +416,7 @@
   </a>
   <div class="nav-r">
     <ul class="nav-links">
-      <li><a href="#usecases" class="l-de">Anwendungsfälle</a><a href="#usecases" class="l-en">Use Cases</a></li>
+      <li><a href="/anwendungsfaelle" class="l-de">Anwendungsfälle</a><a href="/use-cases" class="l-en">Use Cases</a></li>
       <li><a href="#how" class="l-de">Vorgehen</a><a href="#how" class="l-en">How It Works</a></li>
       <li><a href="#why" class="l-de">Warum wir</a><a href="#why" class="l-en">Why Us</a></li>
       <li><a href="https://hosting.openclaw-consulting.ch" class="nav-hosting l-de" target="_blank" rel="noopener">OpenClaw selbst hosten &amp; einrichten <span class="hosting-arrow">↗</span></a><a href="https://hosting.openclaw-consulting.ch" class="nav-hosting l-en" target="_blank" rel="noopener">Self-host &amp; set up OpenClaw <span class="hosting-arrow">↗</span></a></li>
@@ -421,6 +426,21 @@
       <button class="on" onclick="setLang('de')">DE</button>
       <button onclick="setLang('en')">EN</button>
     </div>
+    <button class="mobile-menu-btn" type="button" aria-label="Menü öffnen" onclick="document.body.classList.toggle('mobile-nav-open')">☰</button>
+  </div>
+  <div class="mobile-menu">
+    <a href="/anwendungsfaelle" class="l-de" onclick="document.body.classList.remove('mobile-nav-open')">Anwendungsfälle</a>
+    <a href="/use-cases" class="l-en" onclick="document.body.classList.remove('mobile-nav-open')">Use Cases</a>
+    <a href="#case-studies" class="l-de" onclick="document.body.classList.remove('mobile-nav-open')">Projektbeispiele</a>
+    <a href="#case-studies" class="l-en" onclick="document.body.classList.remove('mobile-nav-open')">Example Projects</a>
+    <a href="#how" class="l-de" onclick="document.body.classList.remove('mobile-nav-open')">Vorgehen</a>
+    <a href="#how" class="l-en" onclick="document.body.classList.remove('mobile-nav-open')">How It Works</a>
+    <a href="#why" class="l-de" onclick="document.body.classList.remove('mobile-nav-open')">Warum wir</a>
+    <a href="#why" class="l-en" onclick="document.body.classList.remove('mobile-nav-open')">Why Us</a>
+    <a href="https://hosting.openclaw-consulting.ch" target="_blank" rel="noopener" class="l-de">OpenClaw Hosting ↗</a>
+    <a href="https://hosting.openclaw-consulting.ch" target="_blank" rel="noopener" class="l-en">OpenClaw Hosting ↗</a>
+    <a href="#contact" class="l-de" onclick="document.body.classList.remove('mobile-nav-open')">Kontakt</a>
+    <a href="#contact" class="l-en" onclick="document.body.classList.remove('mobile-nav-open')">Contact</a>
   </div>
 </nav>
 
@@ -439,8 +459,8 @@
     <div class="hero-btns">
       <a href="#contact" class="btn-ink l-de">Kostenloses Erstgespräch →</a>
       <a href="#contact" class="btn-ink l-en">Free Consultation →</a>
-      <a href="#usecases" class="btn-outline l-de">Beispiele ansehen</a>
-      <a href="#usecases" class="btn-outline l-en">See Examples</a>
+      <a href="/anwendungsfaelle" class="btn-outline l-de">Anwendungsfälle ansehen</a>
+      <a href="/use-cases" class="btn-outline l-en">See Use Cases</a>
     </div>
 
     <div class="hero-stats">
