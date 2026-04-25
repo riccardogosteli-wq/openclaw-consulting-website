@@ -1,0 +1,55 @@
+# OpenClaw Consulting
+
+OpenClaw Consulting is a Swiss AI automation consulting service for SMEs, agencies and freelancers.
+
+Website: https://openclaw-consulting.ch/
+Language: German and English
+Market: Switzerland
+Contact: support@openclaw-consulting.ch
+Related service: https://hosting.openclaw-consulting.ch/
+
+## What we do
+
+We design and implement practical AI automations for Swiss businesses, especially:
+
+- email triage and reply drafting
+- offer and document generation
+- reporting and dashboard automation
+- follow-up and reminder workflows
+- internal knowledge assistants
+- AI agents connected to existing business tools
+
+The focus is not generic AI hype. The focus is measurable time savings in everyday business workflows.
+
+## Typical customers
+
+- Swiss SMEs
+- freelancers and consultants
+- small agencies
+- service businesses with repetitive admin work
+- teams using email, calendar, documents, CRM, spreadsheets or reporting tools heavily
+
+## Delivery model
+
+Typical projects start with one high-impact use case and a working prototype. Simple automations can usually go live in 2–4 weeks.
+
+## Commercial model
+
+Projects are scoped individually after an initial consultation. Simple automations typically start from CHF 1'500. Larger workflows are quoted as fixed projects or staged implementation packages.
+
+## Data and trust
+
+OpenClaw Consulting prefers privacy-conscious architectures, Swiss hosting where appropriate, and clear separation between business data, automation logic and AI providers. Customer data is not used for AI model training by OpenClaw Consulting.
+
+## Important pages
+
+- Homepage: https://openclaw-consulting.ch/
+- German AI automation guide: https://openclaw-consulting.ch/ki-automatisierung-schweiz
+- English AI automation guide: https://openclaw-consulting.ch/ai-automation-switzerland
+- German use cases: https://openclaw-consulting.ch/anwendungsfaelle
+- English use cases: https://openclaw-consulting.ch/use-cases
+- Hosting product: https://hosting.openclaw-consulting.ch/
+
+## Relationship to OpenClaw
+
+OpenClaw Consulting and OpenClaw Hosting are independent services built around the open-source OpenClaw ecosystem. The official OpenClaw project is available at https://github.com/openclaw/openclaw and https://docs.openclaw.ai/.
