@@ -93,9 +93,9 @@
   <div class="nav-r">
     <a href="/" class="back-link l-de">← Zurück</a>
     <a href="/" class="back-link l-en">← Back</a>
-    <div class="lang-btns">
-      <button id="btn-de" class="on" onclick="setLang('de')">DE</button>
-      <button id="btn-en" onclick="setLang('en')">EN</button>
+    <div class="lang-btns" role="group" aria-label="Sprache wählen">
+      <button id="btn-de" type="button" class="on" aria-pressed="true" onclick="setLang('de')">DE</button>
+      <button id="btn-en" type="button" aria-pressed="false" onclick="setLang('en')">EN</button>
     </div>
   </div>
 </nav>
@@ -199,8 +199,12 @@
 <script>
 function setLang(l) {
   document.body.classList.toggle('en', l === 'en');
-  document.getElementById('btn-de').classList.toggle('on', l === 'de');
-  document.getElementById('btn-en').classList.toggle('on', l === 'en');
+  const de = document.getElementById('btn-de');
+  const en = document.getElementById('btn-en');
+  de.classList.toggle('on', l === 'de');
+  en.classList.toggle('on', l === 'en');
+  de.setAttribute('aria-pressed', l === 'de' ? 'true' : 'false');
+  en.setAttribute('aria-pressed', l === 'en' ? 'true' : 'false');
   localStorage.setItem('oc-lang', l);
 }
 (function(){ const s = localStorage.getItem('oc-lang'); if(s) setLang(s); })();

@@ -422,25 +422,25 @@
       <li><a href="https://hosting.openclaw-consulting.ch" class="nav-hosting l-de" target="_blank" rel="noopener">OpenClaw selbst hosten &amp; einrichten <span class="hosting-arrow">↗</span></a><a href="https://hosting.openclaw-consulting.ch" class="nav-hosting l-en" target="_blank" rel="noopener">Self-host &amp; set up OpenClaw <span class="hosting-arrow">↗</span></a></li>
       <li><a href="#contact" class="nav-cta l-de">Kontakt</a><a href="#contact" class="nav-cta l-en">Contact</a></li>
     </ul>
-    <div class="lang-btns">
-      <button class="on" onclick="setLang('de')">DE</button>
-      <button onclick="setLang('en')">EN</button>
+    <div class="lang-btns" role="group" aria-label="Sprache wählen">
+      <button type="button" class="on" aria-pressed="true" onclick="setLang('de')">DE</button>
+      <button type="button" aria-pressed="false" onclick="setLang('en')">EN</button>
     </div>
-    <button class="mobile-menu-btn" type="button" aria-label="Menü öffnen" onclick="document.body.classList.toggle('mobile-nav-open')">☰</button>
+    <button class="mobile-menu-btn" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu" onclick="toggleMobileMenu()">☰</button>
   </div>
-  <div class="mobile-menu">
-    <a href="/anwendungsfaelle/" class="l-de" onclick="document.body.classList.remove('mobile-nav-open')">Anwendungsfälle</a>
-    <a href="/use-cases/" class="l-en" onclick="document.body.classList.remove('mobile-nav-open')">Use Cases</a>
-    <a href="#case-studies" class="l-de" onclick="document.body.classList.remove('mobile-nav-open')">Projektbeispiele</a>
-    <a href="#case-studies" class="l-en" onclick="document.body.classList.remove('mobile-nav-open')">Example Projects</a>
-    <a href="#how" class="l-de" onclick="document.body.classList.remove('mobile-nav-open')">Vorgehen</a>
-    <a href="#how" class="l-en" onclick="document.body.classList.remove('mobile-nav-open')">How It Works</a>
-    <a href="#why" class="l-de" onclick="document.body.classList.remove('mobile-nav-open')">Warum wir</a>
-    <a href="#why" class="l-en" onclick="document.body.classList.remove('mobile-nav-open')">Why Us</a>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/anwendungsfaelle/" class="l-de" onclick="closeMobileMenu()">Anwendungsfälle</a>
+    <a href="/use-cases/" class="l-en" onclick="closeMobileMenu()">Use Cases</a>
+    <a href="#case-studies" class="l-de" onclick="closeMobileMenu()">Projektbeispiele</a>
+    <a href="#case-studies" class="l-en" onclick="closeMobileMenu()">Example Projects</a>
+    <a href="#how" class="l-de" onclick="closeMobileMenu()">Vorgehen</a>
+    <a href="#how" class="l-en" onclick="closeMobileMenu()">How It Works</a>
+    <a href="#why" class="l-de" onclick="closeMobileMenu()">Warum wir</a>
+    <a href="#why" class="l-en" onclick="closeMobileMenu()">Why Us</a>
     <a href="https://hosting.openclaw-consulting.ch" target="_blank" rel="noopener" class="l-de">OpenClaw Hosting ↗</a>
     <a href="https://hosting.openclaw-consulting.ch" target="_blank" rel="noopener" class="l-en">OpenClaw Hosting ↗</a>
-    <a href="#contact" class="l-de" onclick="document.body.classList.remove('mobile-nav-open')">Kontakt</a>
-    <a href="#contact" class="l-en" onclick="document.body.classList.remove('mobile-nav-open')">Contact</a>
+    <a href="#contact" class="l-de" onclick="closeMobileMenu()">Kontakt</a>
+    <a href="#contact" class="l-en" onclick="closeMobileMenu()">Contact</a>
   </div>
 </nav>
 
@@ -1002,34 +1002,34 @@
         <input type="hidden" name="_cc" value="support@openclaw-consulting.ch"/>
         <div class="frow">
           <div class="fg">
-            <label class="l-de">Vorname *</label>
-            <label class="l-en">First Name *</label>
-            <input type="text" name="first_name" required/>
+            <label class="l-de" for="contact-first-name">Vorname *</label>
+            <label class="l-en" for="contact-first-name">First Name *</label>
+            <input id="contact-first-name" type="text" name="first_name" autocomplete="given-name" required/>
           </div>
           <div class="fg">
-            <label class="l-de">Nachname *</label>
-            <label class="l-en">Last Name *</label>
-            <input type="text" name="last_name" required/>
+            <label class="l-de" for="contact-last-name">Nachname *</label>
+            <label class="l-en" for="contact-last-name">Last Name *</label>
+            <input id="contact-last-name" type="text" name="last_name" autocomplete="family-name" required/>
           </div>
         </div>
         <div class="fg">
-          <label>E-Mail *</label>
-          <input type="email" name="email" required/>
+          <label for="contact-email">E-Mail *</label>
+          <input id="contact-email" type="email" name="email" autocomplete="email" required/>
         </div>
         <div class="fg">
-          <label class="l-de">Unternehmen</label>
-          <label class="l-en">Company</label>
-          <input type="text" name="company"/>
+          <label class="l-de" for="contact-company">Unternehmen</label>
+          <label class="l-en" for="contact-company">Company</label>
+          <input id="contact-company" type="text" name="company" autocomplete="organization"/>
         </div>
         <div class="fg">
-          <label class="l-de">Welches Thema interessiert Sie?</label>
-          <label class="l-en">Which topic interests you?</label>
+          <label class="l-de" for="sel">Welches Thema interessiert Sie?</label>
+          <label class="l-en" for="sel">Which topic interests you?</label>
           <select name="interest" id="sel"></select>
         </div>
         <div class="fg">
-          <label class="l-de">Ihre Nachricht (optional)</label>
-          <label class="l-en">Your message (optional)</label>
-          <textarea name="message"></textarea>
+          <label class="l-de" for="contact-message">Ihre Nachricht (optional)</label>
+          <label class="l-en" for="contact-message">Your message (optional)</label>
+          <textarea id="contact-message" name="message"></textarea>
         </div>
         <button type="submit" class="btn-submit">
           <span class="l-de">Gespräch anfragen →</span>
@@ -1094,9 +1094,23 @@ function buildSelect(lang) {
 function setLang(lang) {
   document.body.classList.toggle('en', lang === 'en');
   document.querySelectorAll('.lang-btns button').forEach(b => {
-    b.classList.toggle('on', b.textContent === lang.toUpperCase());
+    const active = b.textContent === lang.toUpperCase();
+    b.classList.toggle('on', active);
+    b.setAttribute('aria-pressed', active ? 'true' : 'false');
   });
   buildSelect(lang);
+}
+
+function toggleMobileMenu() {
+  const isOpen = document.body.classList.toggle('mobile-nav-open');
+  const button = document.querySelector('.mobile-menu-btn');
+  if (button) button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
+
+function closeMobileMenu() {
+  document.body.classList.remove('mobile-nav-open');
+  const button = document.querySelector('.mobile-menu-btn');
+  if (button) button.setAttribute('aria-expanded', 'false');
 }
 
 buildSelect('de');

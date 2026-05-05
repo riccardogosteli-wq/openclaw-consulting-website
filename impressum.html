@@ -113,9 +113,9 @@
   <div class="nav-r">
     <a href="/" class="back-link l-de">← Zurück</a>
     <a href="/" class="back-link l-en">← Back</a>
-    <div class="lang-btns">
-      <button id="btn-de" class="on" onclick="setLang('de')">DE</button>
-      <button id="btn-en" onclick="setLang('en')">EN</button>
+    <div class="lang-btns" role="group" aria-label="Sprache wählen">
+      <button id="btn-de" type="button" class="on" aria-pressed="true" onclick="setLang('de')">DE</button>
+      <button id="btn-en" type="button" aria-pressed="false" onclick="setLang('en')">EN</button>
     </div>
   </div>
 </nav>
@@ -155,25 +155,25 @@
         <input type="hidden" name="_cc" value="support@openclaw-consulting.ch"/>
         <div class="frow">
           <div class="fg">
-            <label class="l-de">Vorname *</label>
-            <label class="l-en">First Name *</label>
-            <input type="text" name="first_name" required/>
+            <label class="l-de" for="legal-first-name">Vorname *</label>
+            <label class="l-en" for="legal-first-name">First Name *</label>
+            <input id="legal-first-name" type="text" name="first_name" autocomplete="given-name" required/>
           </div>
           <div class="fg">
-            <label class="l-de">Nachname *</label>
-            <label class="l-en">Last Name *</label>
-            <input type="text" name="last_name" required/>
+            <label class="l-de" for="legal-last-name">Nachname *</label>
+            <label class="l-en" for="legal-last-name">Last Name *</label>
+            <input id="legal-last-name" type="text" name="last_name" autocomplete="family-name" required/>
           </div>
         </div>
         <div class="fg">
-          <label class="l-de">E-Mail-Adresse *</label>
-          <label class="l-en">Email Address *</label>
-          <input type="email" name="email" required/>
+          <label class="l-de" for="legal-email">E-Mail-Adresse *</label>
+          <label class="l-en" for="legal-email">Email Address *</label>
+          <input id="legal-email" type="email" name="email" autocomplete="email" required/>
         </div>
         <div class="fg">
-          <label class="l-de">Nachricht *</label>
-          <label class="l-en">Message *</label>
-          <textarea name="message" required></textarea>
+          <label class="l-de" for="legal-message">Nachricht *</label>
+          <label class="l-en" for="legal-message">Message *</label>
+          <textarea id="legal-message" name="message" required></textarea>
         </div>
         <button type="submit" class="btn-submit l-de">Nachricht senden</button>
         <button type="submit" class="btn-submit l-en">Send Message</button>
@@ -214,8 +214,12 @@
 <script>
 function setLang(l) {
   document.body.classList.toggle('en', l === 'en');
-  document.getElementById('btn-de').classList.toggle('on', l === 'de');
-  document.getElementById('btn-en').classList.toggle('on', l === 'en');
+  const de = document.getElementById('btn-de');
+  const en = document.getElementById('btn-en');
+  de.classList.toggle('on', l === 'de');
+  en.classList.toggle('on', l === 'en');
+  de.setAttribute('aria-pressed', l === 'de' ? 'true' : 'false');
+  en.setAttribute('aria-pressed', l === 'en' ? 'true' : 'false');
   localStorage.setItem('oc-lang', l);
 }
 (function(){ const s = localStorage.getItem('oc-lang'); if(s) setLang(s); })();
