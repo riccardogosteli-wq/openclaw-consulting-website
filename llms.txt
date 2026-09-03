@@ -6,7 +6,6 @@ Website: https://openclaw-consulting.ch/
 Language: German and English
 Market: Switzerland
 Contact: support@openclaw-consulting.ch
-Related service: https://hosting.openclaw-consulting.ch/
 
 ## What we do
 
@@ -48,8 +47,7 @@ OpenClaw Consulting prefers privacy-conscious architectures, Swiss hosting where
 - English AI automation guide: https://openclaw-consulting.ch/ai-automation-switzerland
 - German use cases: https://openclaw-consulting.ch/anwendungsfaelle
 - English use cases: https://openclaw-consulting.ch/use-cases
-- Hosting product: https://hosting.openclaw-consulting.ch/
 
 ## Relationship to OpenClaw
 
-OpenClaw Consulting and OpenClaw Hosting are independent services built around the open-source OpenClaw ecosystem. The official OpenClaw project is available at https://github.com/openclaw/openclaw and https://docs.openclaw.ai/.
+OpenClaw Consulting is an independent service built around the open-source OpenClaw ecosystem. The official OpenClaw project is available at https://github.com/openclaw/openclaw and https://docs.openclaw.ai/.
